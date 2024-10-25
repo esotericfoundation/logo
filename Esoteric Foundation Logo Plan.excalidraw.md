@@ -28,6 +28,8 @@ e5864077da6e205299859dc7793d9bb5cdf9088a: $$\color{red}s$$
 
 f2f24a6b9597b8a4d0d66a989ce4171bab142c55: $$\color{red}s$$
 
+91e62dc1dd191788d8594a752f21c74d09cc420d: $$\color{blue}\left(256, 256\right)$$
+
 %%
 ## Drawing
 ```json
@@ -939,12 +941,112 @@ f2f24a6b9597b8a4d0d66a989ce4171bab142c55: $$\color{red}s$$
 			"frameId": null,
 			"status": "pending",
 			"crop": null
+		},
+		{
+			"id": "iPI2he9tjSTG9cdC1YLv5",
+			"type": "freedraw",
+			"x": 300.3293534244243,
+			"y": 258.9179862796703,
+			"width": 0.9459371042704561,
+			"height": 0.9459371042704561,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aT",
+			"roundness": null,
+			"seed": 492867216,
+			"version": 9,
+			"versionNonce": 358918768,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1729883922677,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0.473011852378022,
+					0
+				],
+				[
+					0.9459371042704561,
+					0
+				],
+				[
+					0.473011852378022,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0.9459371042704561
+				],
+				[
+					0,
+					0.47296855213522804
+				],
+				[
+					0,
+					0.47296855213522804
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": null
+		},
+		{
+			"id": "QtatcwX9",
+			"type": "image",
+			"x": 317.4083982462861,
+			"y": 252.80981718796835,
+			"width": 68,
+			"height": 16,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 50613,
+			"version": 42,
+			"versionNonce": 537153648,
+			"updated": 1729883949387,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "91e62dc1dd191788d8594a752f21c74d09cc420d",
+			"scale": [
+				1,
+				1
+			],
+			"index": "aU",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
 		}
 	],
 	"appState": {
 		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
+		"currentItemStrokeColor": "#1971c2",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
