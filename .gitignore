@@ -1,1 +1,4 @@
 .~lock.*#
+
+# User-specific state of the workspace
+.obsidian/workspace.json
