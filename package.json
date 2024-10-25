@@ -4,7 +4,7 @@
   "description": "The scripts for the official logo of the Esoteric Foundation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buildPlugins": "bash .scripts/buildPlugins.bash"
   },
   "repository": {
     "type": "git",
