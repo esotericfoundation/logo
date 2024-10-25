@@ -40,7 +40,8 @@ a86e5518356f6dcd66b0e4f35803d053a783aa7f: $$\color{green}60\degree$$
 \tan(60 \degree) = \frac{h}{\frac{s}{2}} \\
 \implies \sqrt{3} = \frac{h}{\frac{s}{2}} \\
 \implies \sqrt{3} \times \frac{s}{2} = h \\
-\implies \frac{s\sqrt{3}}{2} = h
+\implies \frac{s\sqrt{3}}{2} = h \\
+\implies s = \frac{2h}{\sqrt{3}} = \frac{2h\sqrt{3}}{3}
 \end{align}$$
 
 baead8b3d2ab3a4a13e95e072ba42a2583be09c5: $$\text{Let } h = (512 - 128)px = 384px$$
@@ -1165,10 +1166,10 @@ baead8b3d2ab3a4a13e95e072ba42a2583be09c5: $$\text{Let } h = (512 - 128)px = 384p
 		{
 			"id": "VuyesFAC",
 			"type": "image",
-			"x": -533.1638156205578,
-			"y": 205.57370307010655,
-			"width": 98.45220277708587,
-			"height": 122.29609563716136,
+			"x": -533.06897292764,
+			"y": 205.45566323811863,
+			"width": 98.2625173912501,
+			"height": 122.53217530113717,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -1364,44 +1365,6 @@ baead8b3d2ab3a4a13e95e072ba42a2583be09c5: $$\text{Let } h = (512 - 128)px = 384p
 			"frameId": null,
 			"status": "pending",
 			"crop": null
-		},
-		{
-			"id": "90K6lmvm",
-			"type": "text",
-			"x": -527.1405783633319,
-			"y": 378.141546406311,
-			"width": 33.89994812011719,
-			"height": 27,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "dashed",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"index": "ac",
-			"roundness": null,
-			"seed": 2044836496,
-			"version": 16,
-			"versionNonce": 1651762320,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1729884955961,
-			"link": null,
-			"locked": false,
-			"text": "Let ",
-			"rawText": "Let ",
-			"fontSize": 20,
-			"fontFamily": 6,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Let ",
-			"autoResize": true,
-			"lineHeight": 1.35
 		}
 	],
 	"appState": {
