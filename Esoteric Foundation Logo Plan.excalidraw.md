@@ -46,8 +46,8 @@ a86e5518356f6dcd66b0e4f35803d053a783aa7f: $$\color{green}60\degree$$
 
 baead8b3d2ab3a4a13e95e072ba42a2583be09c5: $$
 \begin{align}
-\text{Let } h = (512 - 128)px = 384px \\
-\implies s = 443px
+\text{Let } h = (512 - 256)px = 256px \\
+\implies s = 296px
 \end{align}
 $$
 
