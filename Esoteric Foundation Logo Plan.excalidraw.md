@@ -1706,16 +1706,116 @@ $$
 			"frameId": null,
 			"status": "pending",
 			"crop": null
+		},
+		{
+			"id": "1_LiHz6SBTtQu_RR8GO16",
+			"type": "line",
+			"x": 300.9997763508054,
+			"y": 258.26708034286986,
+			"width": 78.69617726999365,
+			"height": 78.23866911906003,
+			"angle": 0,
+			"strokeColor": "#0c8599",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "dashed",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "aq",
+			"roundness": null,
+			"seed": 189156464,
+			"version": 162,
+			"versionNonce": 1716490352,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1729886563078,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					78.69617726999365,
+					78.23866911906003
+				]
+			],
+			"lastCommittedPoint": [
+				78.69617726999365,
+				78.23866911906003
+			],
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
+		},
+		{
+			"id": "AqgUyOy3QJooUbh_DRxeC",
+			"type": "line",
+			"x": 298.71206804142116,
+			"y": 259.1821804220951,
+			"width": 161.9677711587559,
+			"height": 159.22255469843805,
+			"angle": 0,
+			"strokeColor": "#0c8599",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "dashed",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "ar",
+			"roundness": null,
+			"seed": 422026384,
+			"version": 275,
+			"versionNonce": 716888688,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1729886576579,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-80.52637742844422,
+					80.98388557937795
+				],
+				[
+					0.9151000792252262,
+					159.22255469843805
+				],
+				[
+					81.44139373031169,
+					79.15372730960638
+				]
+			],
+			"lastCommittedPoint": [
+				81.44139373031169,
+				79.15372730960638
+			],
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
 		}
 	],
 	"appState": {
 		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemStrokeColor": "#0c8599",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
+		"currentItemStrokeStyle": "dashed",
 		"currentItemRoughness": 0,
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 6,
