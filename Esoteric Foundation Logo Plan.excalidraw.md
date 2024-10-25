@@ -61,6 +61,10 @@ $$
 
 5d3862fe90acaaaa41512fea0c27e9a431867c3d: $$\color{purple}196px$$
 
+51164110776a512317958978bbabc8a8665e4181: $$\color{blue}65px$$
+
+79361b54d66a6ea2f9ea8e25b3b5844078f77df7: $$\color{blue}65px$$
+
 %%
 ## Drawing
 ```json
@@ -1730,7 +1734,7 @@ $$
 			"version": 162,
 			"versionNonce": 1716490352,
 			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1729886563078,
 			"link": null,
 			"locked": false,
@@ -1744,10 +1748,7 @@ $$
 					78.23866911906003
 				]
 			],
-			"lastCommittedPoint": [
-				78.69617726999365,
-				78.23866911906003
-			],
+			"lastCommittedPoint": null,
 			"startBinding": null,
 			"endBinding": null,
 			"startArrowhead": null,
@@ -1776,7 +1777,7 @@ $$
 			"version": 275,
 			"versionNonce": 716888688,
 			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1729886576579,
 			"link": null,
 			"locked": false,
@@ -1798,14 +1799,81 @@ $$
 					79.15372730960638
 				]
 			],
-			"lastCommittedPoint": [
-				81.44139373031169,
-				79.15372730960638
-			],
+			"lastCommittedPoint": null,
 			"startBinding": null,
 			"endBinding": null,
 			"startArrowhead": null,
 			"endArrowhead": null
+		},
+		{
+			"id": "YIforcIQ",
+			"type": "image",
+			"x": 234.12833002547063,
+			"y": 277.8041867555024,
+			"width": 34,
+			"height": 14,
+			"angle": 5.53110620901957,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 53309,
+			"version": 138,
+			"versionNonce": 1233136752,
+			"updated": 1729886647293,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "51164110776a512317958978bbabc8a8665e4181",
+			"scale": [
+				1,
+				1
+			],
+			"index": "as",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
+		},
+		{
+			"id": "SYKJvc6la73hikn_fB1y_",
+			"type": "image",
+			"x": 333.8711807874615,
+			"y": 280.54940321582046,
+			"width": 34,
+			"height": 14,
+			"angle": 0.7597643188515804,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 1892929648,
+			"version": 228,
+			"versionNonce": 2055882864,
+			"updated": 1729886654043,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "79361b54d66a6ea2f9ea8e25b3b5844078f77df7",
+			"scale": [
+				1,
+				1
+			],
+			"index": "at",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
 		}
 	],
 	"appState": {
