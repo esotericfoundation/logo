@@ -36,6 +36,13 @@ a86e5518356f6dcd66b0e4f35803d053a783aa7f: $$\color{green}60\degree$$
 
 4d4bf7607fa32c777dd2e15d343392a63d906e2c: $$\color{green}60\degree$$
 
+8f531cb33c73f5929932f01b4d9ece57b2de2ba4: $$\begin{align}
+\tan(60 \degree) = \frac{h}{\frac{s}{2}} \\
+\implies \sqrt{3} = \frac{h}{\frac{s}{2}} \\
+\implies \sqrt{3} \times \frac{s}{2} = h \\
+\implies \frac{s\sqrt{3}}{2} = h
+\end{align}$$
+
 %%
 ## Drawing
 ```json
@@ -1149,6 +1156,41 @@ a86e5518356f6dcd66b0e4f35803d053a783aa7f: $$\color{green}60\degree$$
 				1
 			],
 			"index": "aX",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
+		},
+		{
+			"id": "VuyesFAC",
+			"type": "image",
+			"x": -572.6649193459887,
+			"y": 232.79664305099135,
+			"width": 177.4544102279477,
+			"height": 67.85021567539177,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 11351,
+			"version": 91,
+			"versionNonce": 1144308880,
+			"updated": 1729884212199,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "8f531cb33c73f5929932f01b4d9ece57b2de2ba4",
+			"scale": [
+				1,
+				1
+			],
+			"index": "aY",
 			"frameId": null,
 			"status": "pending",
 			"crop": null
