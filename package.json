@@ -2,7 +2,6 @@
   "name": "esoteric-foundation-logo-scripts",
   "version": "1.0.0",
   "description": "The scripts for the official logo of the Esoteric Foundation.",
-  "main": "index.js",
   "scripts": {
     "buildPlugins": "bash .scripts/buildPlugins.bash"
   },
