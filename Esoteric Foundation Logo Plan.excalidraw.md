@@ -90,6 +90,8 @@ a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 
 69c084f74272781bceedb9c30ae815c2bd77db82: $$\color{red}y = -\sqrt{3}(x - 256) + 384$$
 
+7d299e9f674e9de81d3518c7369a237d76c57db0: $$\color{blue}\left(192+64\sqrt{3},192+64\sqrt{3}\right)$$
+
 %%
 ## Drawing
 ```json
@@ -2405,6 +2407,41 @@ a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 			"frameId": null,
 			"status": "pending",
 			"crop": null
+		},
+		{
+			"id": "XaEPsMsv",
+			"type": "image",
+			"x": 397.4052795104134,
+			"y": 188.27106040184822,
+			"width": 49.4875326028358,
+			"height": 7.513813850692346,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 17968,
+			"version": 136,
+			"versionNonce": 682553603,
+			"updated": 1729954456392,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "7d299e9f674e9de81d3518c7369a237d76c57db0",
+			"scale": [
+				1,
+				1
+			],
+			"index": "b08",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
 		}
 	],
 	"appState": {
@@ -2423,10 +2460,10 @@ a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 91.6648058828261,
-		"scrollY": 29.738913918369008,
+		"scrollX": -67.02695908775468,
+		"scrollY": -31.057866548049333,
 		"zoom": {
-			"value": 2.178549
+			"value": 3.127272
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": 20,
