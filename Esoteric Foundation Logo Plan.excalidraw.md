@@ -82,6 +82,10 @@ $$
 
 a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 
+58b0591cf050edb01941b1ef5de60a573feb4a2a: $$\color{green}y = 1 \times (x - 256) + 256$$
+
+3c83a94b2a61139ec1fdf3f7d78cae24d0714aff: $$\color{green}y = -1 \times (x - 256) + 256$$
+
 %%
 ## Drawing
 ```json
@@ -2171,12 +2175,168 @@ a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 			"frameId": null,
 			"status": "pending",
 			"crop": null
+		},
+		{
+			"id": "YvpqK-4XQLD4zCC6H4ygN",
+			"type": "line",
+			"x": 300.31199021087787,
+			"y": 285.8277185607493,
+			"width": 90.60803936826017,
+			"height": 93.29054204409934,
+			"angle": 0,
+			"strokeColor": "#2f9e44",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "dashed",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "b02",
+			"roundness": null,
+			"seed": 756085635,
+			"version": 124,
+			"versionNonce": 209932259,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1729954033853,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					90.60803936826017,
+					-93.29054204409934
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
+		},
+		{
+			"id": "MVG98jVEYtF9DkmtKpb8s",
+			"type": "line",
+			"x": 300.31199021087787,
+			"y": 286.1257531899697,
+			"width": 94.18467321931143,
+			"height": 90.01194282226865,
+			"angle": 0,
+			"strokeColor": "#2f9e44",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "dashed",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "b03",
+			"roundness": null,
+			"seed": 1698845229,
+			"version": 126,
+			"versionNonce": 2121820717,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1729954045937,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-94.18467321931143,
+					-90.01194282226865
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
+		},
+		{
+			"id": "pYkacoJG",
+			"type": "image",
+			"x": 357.57131228316075,
+			"y": 238.0501852789683,
+			"width": 28.0485050815261,
+			"height": 2.6872819239785484,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 52441,
+			"version": 419,
+			"versionNonce": 1909736099,
+			"updated": 1729954103183,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "58b0591cf050edb01941b1ef5de60a573feb4a2a",
+			"scale": [
+				1,
+				1
+			],
+			"index": "b04",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
+		},
+		{
+			"id": "ytaUzlZB-1N_Vjvfsd8Iy",
+			"type": "image",
+			"x": 210.13346491091792,
+			"y": 237.96754267955694,
+			"width": 28.0485050815261,
+			"height": 2.6872819239785484,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 1015906691,
+			"version": 478,
+			"versionNonce": 210609197,
+			"updated": 1729954115871,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "3c83a94b2a61139ec1fdf3f7d78cae24d0714aff",
+			"scale": [
+				1,
+				1
+			],
+			"index": "b05",
+			"frameId": null,
+			"status": "pending",
+			"crop": null
 		}
 	],
 	"appState": {
 		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#0c8599",
+		"currentItemStrokeColor": "#2f9e44",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
@@ -2189,10 +2349,10 @@ a3f3ae0555073fcf4e3bd1b3f18b47a50154d33f: $$\color{blue}64px$$
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": -165.24543460682094,
-		"scrollY": -245.85341213575762,
+		"scrollX": -199.6077401074806,
+		"scrollY": -179.1475265381997,
 		"zoom": {
-			"value": 8.183206
+			"value": 9.382221
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": 20,
