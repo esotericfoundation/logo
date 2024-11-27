@@ -1,25 +1,5 @@
 {
-  "name": "esoteric-foundation-logo-scripts",
-  "version": "0.1.0",
-  "description": "The scripts for the official logo of the Esoteric Foundation.",
   "scripts": {
     "buildPlugins": "bash .scripts/buildPlugins.bash"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EsotericFoundation/logo.git"
-  },
-  "keywords": [
-    "script",
-    "logo",
-    "svg",
-    "obsidian",
-    "plugin"
-  ],
-  "author": "Esoteric Foundation",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EsotericFoundation/logo/issues"
-  },
-  "homepage": "https://github.com/EsotericFoundation/logo#readme"
+  }
 }
