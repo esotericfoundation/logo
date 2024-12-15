@@ -1,5 +1,7 @@
 # Esoteric Foundation Logo
 
+[![Project Status: Maintained](./assets/images/badges/status.svg)](./)
+
 > The official logo of the [Esoteric Foundation](https://esoteric.foundation).
 
 ## License
