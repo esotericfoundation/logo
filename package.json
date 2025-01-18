@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "buildPlugins": "bash .scripts/buildPlugins.bash"
-  },
   "dependencies": {
     "svgexport": "^0.4.2"
   }
