@@ -1,9 +1,6 @@
 # Lock files
 .~lock.*#
 
-# User-specific state of the workspace
-.obsidian/workspace.json
-
 # Node modules
 node_modules
 
