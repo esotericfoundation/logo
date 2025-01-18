@@ -1,3 +1,7 @@
 {
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "userIgnoreFilters": [
+    "assets/",
+    "node_modules/"
+  ]
 }
