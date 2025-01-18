@@ -1,0 +1,10 @@
+{
+  "hidden": true,
+  "hiddenList": [
+    "README.md",
+    "assets",
+    "node_modules",
+    "Esoteric Foundation Logo.png",
+    "Esoteric Foundation Logo.svg"
+  ]
+}
