@@ -4,3 +4,6 @@
 [submodule ".obsidian/scripts/build"]
 	path = .obsidian/scripts/build
 	url = git@gist.github.com:a6126176532772e3fc6b3aad936c66db.git
+[submodule ".obsidian/plugin-repositories/OA-file-hider"]
+	path = .obsidian/plugin-repositories/OA-file-hider
+	url = git@github.com:Oliver-Akins/file-hider.git
