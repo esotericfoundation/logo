@@ -3,3 +3,9 @@
 
 # User-specific state of the workspace
 .obsidian/workspace.json
+
+# Node modules
+node_modules
+
+# Unneeded package.json history and information
+package-lock.json
