@@ -1,5 +1,5 @@
 [submodule ".obsidian/plugins/excalidraw"]
-	path = .obsidian/plugin-repositories/excalidraw
+	path = .obsidian/plugin-repositories/obsidian-excalidraw-plugin
 	url = git@github.com:zsviczian/obsidian-excalidraw-plugin.git
 [submodule ".obsidian/scripts/build"]
 	path = .obsidian/scripts/build
