@@ -10,3 +10,6 @@
 [submodule ".obsidian/plugin-repositories/numerals"]
 	path = .obsidian/plugin-repositories/numerals
 	url = git@github.com:gtg922r/obsidian-numerals.git
+[submodule ".obsidian/plugin-repositories/obsidian-latex-suite"]
+	path = .obsidian/plugin-repositories/obsidian-latex-suite
+	url = git@github.com:artisticat1/obsidian-latex-suite.git
