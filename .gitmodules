@@ -7,3 +7,6 @@
 [submodule ".obsidian/plugin-repositories/OA-file-hider"]
 	path = .obsidian/plugin-repositories/OA-file-hider
 	url = git@github.com:Oliver-Akins/file-hider.git
+[submodule ".obsidian/plugin-repositories/numerals"]
+	path = .obsidian/plugin-repositories/numerals
+	url = git@github.com:gtg922r/obsidian-numerals.git
