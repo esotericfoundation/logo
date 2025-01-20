@@ -6,6 +6,7 @@ def point_to_svg_point(point: (float, float)):
     return str((point[0], square_width - point[1])).replace("(", "").replace(")", "")
 
 triangle_height = 256 # The height of the big (not upside down) triangle.
+small_square_side_length = 48
 
 circle_radius = square_width / 2
 
@@ -34,6 +35,17 @@ triangle_right = (triangle_bottom[0] + triangle_side_length / 2, triangle_bottom
 
 triangle_left = (triangle_bottom[0] - triangle_side_length / 2, triangle_bottom[1])
 
+small_square_top = (center[0], center[1] - sqrt(2) * object_from_circle_distance)
+
+small_square_diagonal = 2 * sqrt((small_square_side_length ** 2) / 2)
+
+small_square_center = (small_square_top[0], small_square_top[1] - small_square_diagonal / 2)
+
+small_square_bottom = (small_square_center[0], small_square_center[1] - small_square_diagonal / 2)
+
+small_square_right = (small_square_center[0] + small_square_diagonal / 2, small_square_center[1])
+small_square_left = (small_square_center[0] - small_square_diagonal / 2, small_square_center[1])
+
 # Line 1: (x - w/2) + w/2
 # Line 2 (Triangle's right side): -h/(s/2) * (x - w/2) + w/2 + h/2
 # -h/(s/2) * (x - w/2) + w/2 + h/2 = x
@@ -58,6 +70,7 @@ left_triangle_top_right = (intersection_left - sqrt(((object_from_circle_distanc
 svg_string = f"<svg width=\"{square_width}\" height=\"{square_width}\" xmlns=\"http://www.w3.org/2000/svg\">\n"
 
 svg_string += f"  <polygon points=\"{point_to_svg_point(triangle_left)} {point_to_svg_point(center)} {point_to_svg_point(triangle_right)} {point_to_svg_point(triangle_top)}\" fill=\"white\" />\n"
+svg_string += f"  <polygon points=\"{point_to_svg_point(small_square_top)} {point_to_svg_point(small_square_right)} {point_to_svg_point(small_square_bottom)} {point_to_svg_point(small_square_left)}\" fill=\"white\" />\n"
 
 svg_string += "</svg>\n"
 
