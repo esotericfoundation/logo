@@ -47,6 +47,8 @@ intersection_left = square_width / 2 - (intersection_right - square_width / 2)
 
 print("Left intersection: " + str(intersection_left))
 
+# SVG CREATION:
+
 svg_string = f"<svg width=\"{square_width}\" height=\"{square_width}\" xmlns=\"http://www.w3.org/2000/svg\">\n"
 
 svg_string += f"  <polygon points=\"{point_to_svg_point(triangle_left)} {point_to_svg_point(center)} {point_to_svg_point(triangle_right)} {point_to_svg_point(triangle_top)}\" fill=\"white\" />\n"
