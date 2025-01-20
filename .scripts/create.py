@@ -1,6 +1,10 @@
 from math import tan, radians
 
 square_width = 512
+
+def point_to_svg_point(point: (float, float)):
+    return str((point[0], square_width - point[1])).replace("(", "").replace(")", "")
+
 triangle_height = 256 # The height of the big (not upside down) triangle.
 
 circle_radius = square_width / 2
@@ -27,3 +31,11 @@ print("Calculated triangle side length: " + str(triangle_side_length))
 triangle_right = (triangle_bottom[0] + triangle_side_length / 2, triangle_bottom[1])
 
 triangle_left = (triangle_bottom[0] - triangle_side_length / 2, triangle_bottom[1])
+
+svg_string = f"<svg width=\"{square_width}\" height=\"{square_width}\" xmlns=\"http://www.w3.org/2000/svg\">\n"
+
+svg_string += f"  <polygon points=\"{point_to_svg_point(triangle_left)} {point_to_svg_point(center)} {point_to_svg_point(triangle_right)} {point_to_svg_point(triangle_top)}\" fill=\"white\" />\n"
+
+svg_string += "</svg>\n"
+
+print(svg_string)
