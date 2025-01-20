@@ -1,4 +1,4 @@
-import { writeFileSync } from "fs";
+import { writeFileSync, mkdirSync } from "fs";
 
 const squareWidth = 512;
 
@@ -104,4 +104,5 @@ svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointT
 
 svgString += `</svg>\n`;
 
+mkdirSync("./logo/svg", { recursive: true });
 writeFileSync("./logo/svg/logo.svg", svgString)
