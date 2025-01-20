@@ -1,4 +1,4 @@
-from math import tan, radians
+from math import tan, radians, sqrt
 
 square_width = 512
 
@@ -8,6 +8,8 @@ def point_to_svg_point(point: (float, float)):
 triangle_height = 256 # The height of the big (not upside down) triangle.
 
 circle_radius = square_width / 2
+
+object_from_circle_distance = 10
 
 center = (square_width / 2, square_width / 2)
 
@@ -46,6 +48,10 @@ print("Right intersection: " + str(intersection_right))
 intersection_left = square_width / 2 - (intersection_right - square_width / 2)
 
 print("Left intersection: " + str(intersection_left))
+
+right_triangle_top_left = (intersection_right + sqrt(((object_from_circle_distance) ** 2) / 2))
+
+left_triangle_top_right = (intersection_left - sqrt(((object_from_circle_distance) ** 2) / 2))
 
 # SVG CREATION:
 
