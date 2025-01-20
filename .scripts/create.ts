@@ -52,7 +52,9 @@ console.log(`Right intersection: ${intersectionRight}`);
 const intersectionLeft = squareWidth / 2 - (intersectionRight - squareWidth / 2);
 console.log(`Left intersection: ${intersectionLeft}`);
 
-const rightTriangleTopLeft: [number, number] = [intersectionRight + Math.sqrt(objectFromTriangleDistance ** 2 / 2), triangleRightLine(intersectionRight + Math.sqrt(objectFromTriangleDistance ** 2 / 2))];
+const rightTriangleTopLeftX = intersectionRight + Math.sqrt(objectFromTriangleDistance ** 2 / 2);
+
+const rightTriangleTopLeft: [number, number] = [rightTriangleTopLeftX, triangleRightLine(rightTriangleTopLeftX)];
 
 const leftTriangleTopRight: [number, number] = [intersectionLeft - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleTopLeft[0]];
 
