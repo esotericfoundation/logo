@@ -104,4 +104,4 @@ svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointT
 
 svgString += `</svg>\n`;
 
-writeFileSync("./Esoteric Foundation Logo.svg", svgString)
+writeFileSync("./logo/svg/logo.svg", svgString)
