@@ -46,14 +46,14 @@ small_square_bottom = (small_square_center[0], small_square_center[1] - small_sq
 small_square_right = (small_square_center[0] + small_square_diagonal / 2, small_square_center[1])
 small_square_left = (small_square_center[0] - small_square_diagonal / 2, small_square_center[1])
 
-# Line 1: (x - w/2) + w/2
+# Line 1: (x - w/2) + w/2 - sqrt(2) * d
 # Line 2 (Triangle's right side): -h/(s/2) * (x - w/2) + w/2 + h/2
-# -h/(s/2) * (x - w/2) + w/2 + h/2 = x
-# => -h/(s/2) * x + hw/s + w/2 + h/2 = x
-# => hw/s + w/2 + h/2 = x(1 + h/(s/2))
-# => (hw/s + w/2 + h/2)/(1 + h/(s/2)) = x
+# -h/(s/2) * (x - w/2) + w/2 + h/2 = x - sqrt(2) * d
+# => sqrt(2) * d - h/(s/2) * x + hw/s + w/2 + h/2 = x
+# => sqrt(2) * d + hw/s + w/2 + h/2 = x(1 + h/(s/2))
+# => (sqrt(2) * d + hw/s + w/2 + h/2)/(1 + h/(s/2)) = x
 
-intersection_right = (triangle_height * square_width / triangle_side_length + square_width / 2 + triangle_height / 2)/(1 + triangle_height/(triangle_side_length/2))
+intersection_right = (sqrt(2) * object_from_circle_distance + triangle_height * square_width / triangle_side_length + square_width / 2 + triangle_height / 2)/(1 + triangle_height/(triangle_side_length/2))
 
 print("Right intersection: " + str(intersection_right))
 
