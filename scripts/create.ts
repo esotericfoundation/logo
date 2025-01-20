@@ -13,7 +13,8 @@ function flipPoint(point: [number, number]): [number, number] {
     return [squareWidth / 2 - (x - squareWidth / 2), y];
 }
 
-const triangleHeight = 256; // The height of the big (not upside-down) triangle.
+const triangleSideLength = 256;
+const triangleHeight = triangleSideLength * Math.tan((60 * Math.PI) / 180) / 2; // The height of the big (not upside-down) triangle.
 const smallSquareSideLength = 48;
 
 const circleRadius = squareWidth / 2;
@@ -33,7 +34,6 @@ console.log(`Found the bottom of the triangle ${triangleBottom}`);
 // (s / 2) * tan(60 degrees) = h
 // s = 2h / tan(60 degrees)
 
-const triangleSideLength = (2 * triangleHeight) / Math.tan((60 * Math.PI) / 180);
 console.log(`Calculated triangle side length: ${triangleSideLength}`);
 
 const triangleRight: [number, number] = [triangleBottom[0] + triangleSideLength / 2, triangleBottom[1]];
