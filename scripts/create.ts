@@ -13,9 +13,9 @@ function flipPoint(point: [number, number]): [number, number] {
     return [squareWidth / 2 - (x - squareWidth / 2), y];
 }
 
-const triangleSideLength = 256;
+const triangleSideLength = 512;
 const triangleHeight = triangleSideLength * Math.tan((60 * Math.PI) / 180) / 2; // The height of the big (not upside-down) triangle.
-const smallSquareSideLength = 48;
+const smallSquareSideLength = 96;
 
 const circleRadius = squareWidth / 2;
 
