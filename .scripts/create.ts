@@ -57,7 +57,7 @@ const rightTriangleTopLeftY = triangleRightLine(intersectionRight) + Math.sqrt(o
 
 const rightTriangleTopLeft: [number, number] = [rightTriangleTopLeftX, rightTriangleTopLeftY];
 
-const leftTriangleTopRight: [number, number] = [intersectionLeft - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleTopLeft[0]];
+const leftTriangleTopRight: [number, number] = [intersectionLeft - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleTopLeftY];
 
 const intersectionRightBottom = (smallSquareDiagonal + Math.sqrt(2) * objectFromTriangleDistance + (triangleHeight * squareWidth) / triangleSideLength + squareWidth / 2 + triangleHeight / 2) / (1 + triangleHeight / (triangleSideLength / 2));
 
