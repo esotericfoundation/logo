@@ -8,4 +8,5 @@ node_modules
 package-lock.json
 
 # Exported image files
+*.svg
 *.png
