@@ -1,3 +1,5 @@
+import { writeFileSync } from "fs";
+
 const squareWidth = 512;
 
 function pointToSvgPoint(point: [number, number]): string {
@@ -102,4 +104,4 @@ svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointT
 
 svgString += `</svg>\n`;
 
-console.log(svgString);
+writeFileSync("./Esoteric Foundation Logo.svg", svgString)

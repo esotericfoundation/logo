@@ -2,5 +2,6 @@
   "dependencies": {
     "svgexport": "^0.4.2",
     "tsx": "^4.19.2"
-  }
+  },
+  "type": "module"
 }
