@@ -67,7 +67,10 @@ const intersectionLeftBottom = squareWidth / 2 - (intersectionRightBottom - squa
 
 console.log(`Left bottom intersection: ${intersectionLeftBottom}`);
 
-const rightTriangleBottom: [number, number] = [intersectionRightBottom + Math.sqrt(objectFromTriangleDistance ** 2 / 2), triangleRightLine(intersectionRightBottom + Math.sqrt(objectFromTriangleDistance ** 2 / 2))];
+const rightTriangleBottomX = intersectionRightBottom + Math.sqrt(objectFromTriangleDistance ** 2 / 2);
+const rightTriangleBottomY = triangleRightLine(intersectionRightBottom) + Math.sqrt(objectFromTriangleDistance ** 2 / 2);
+
+const rightTriangleBottom: [number, number] = [rightTriangleBottomX, rightTriangleBottomY];
 
 const leftTriangleBottom: [number, number] = [intersectionLeftBottom - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleBottom[1]];
 
