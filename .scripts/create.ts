@@ -74,7 +74,10 @@ const rightTriangleBottom: [number, number] = [rightTriangleBottomX, rightTriang
 
 const leftTriangleBottom: [number, number] = [intersectionLeftBottom - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleBottom[1]];
 
-const rightTriangleRight: [number, number] = [(smallSquareDiagonal + Math.sqrt(2) * objectFromTriangleDistance + rightTriangleTopLeft[1]) / (1 + triangleHeight / (triangleSideLength / 2)), rightTriangleTopLeft[1]];
+const rightTriangleRightX = (smallSquareDiagonal + Math.sqrt(2) * objectFromTriangleDistance + rightTriangleTopLeft[1]) / (1 + triangleHeight / (triangleSideLength / 2));
+const rightTriangleRightY = rightTriangleTopLeftY
+
+const rightTriangleRight: [number, number] = [rightTriangleRightX, rightTriangleRightY];
 
 let svgString = `<svg width="${squareWidth}" height="${squareWidth}" xmlns="http://www.w3.org/2000/svg">\n`;
 
