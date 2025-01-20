@@ -4,6 +4,13 @@ function pointToSvgPoint(point: [number, number]): string {
     return `${point[0]},${squareWidth - point[1]}`;
 }
 
+function flipPoint(point: [number, number]): [number, number] {
+    const x = point[0];
+    const y = point[1];
+
+    return [squareWidth / 2 - (x - squareWidth / 2), y];
+}
+
 const triangleHeight = 256; // The height of the big (not upside-down) triangle.
 const smallSquareSideLength = 48;
 
@@ -84,11 +91,14 @@ const rightTriangleRightY = rightTriangleTopLeftY
 
 const rightTriangleRight: [number, number] = [rightTriangleRightX, rightTriangleRightY];
 
+const leftTriangleLeft = flipPoint(rightTriangleRight);
+
 let svgString = `<svg width="${squareWidth}" height="${squareWidth}" xmlns="http://www.w3.org/2000/svg">\n`;
 
 svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
 svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" fill="white" />\n`;
 svgString += `  <polygon points="${pointToSvgPoint(rightTriangleBottom)} ${pointToSvgPoint(rightTriangleRight)} ${pointToSvgPoint(rightTriangleTopLeft)}" fill="white" />\n`;
+svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointToSvgPoint(leftTriangleLeft)} ${pointToSvgPoint(leftTriangleTopRight)}" fill="white" />\n`;
 
 svgString += `</svg>\n`;
 
