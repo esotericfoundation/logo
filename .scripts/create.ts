@@ -74,7 +74,12 @@ const rightTriangleBottom: [number, number] = [rightTriangleBottomX, rightTriang
 
 const leftTriangleBottom: [number, number] = [intersectionLeftBottom - Math.sqrt(objectFromTriangleDistance ** 2 / 2), rightTriangleBottom[1]];
 
-const rightTriangleRightX = (smallSquareDiagonal + Math.sqrt(2) * objectFromTriangleDistance + rightTriangleTopLeft[1]) / (1 + triangleHeight / (triangleSideLength / 2));
+// Line 1: (x - w/2) + w/2 - sqrt(2) * d - s_d
+// Line 2 (Triangle's right side): i_2
+// i_2 = x - sqrt(2) * d - s_d
+// => s_d + sqrt(2) * d + i_2 = x
+
+const rightTriangleRightX = smallSquareDiagonal + Math.sqrt(2) * objectFromTriangleDistance + rightTriangleTopLeftY;
 const rightTriangleRightY = rightTriangleTopLeftY
 
 const rightTriangleRight: [number, number] = [rightTriangleRightX, rightTriangleRightY];
