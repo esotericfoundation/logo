@@ -18,7 +18,12 @@ $$
 \implies \sqrt{ 3 }x - \sqrt{ 3 } \times 256 + 384 &= -x + 256 + 256 \\
 \implies \sqrt{ 3 }x - \sqrt{ 3 } \times 256 + 384 &= 512 - x \\
 \implies x(1  + \sqrt{ 3 }) &= 512 - 384 + \sqrt{ 3 } \times 256 \\
-\implies x &= \frac{{128 + \sqrt{ 3 } \times 256}}{1 + \sqrt{ 3 }}
+\implies x &= \frac{{128 + \sqrt{ 3 } \times 256}}{1 + \sqrt{ 3 }} \\
+ \\
+x^{2} + x^{2} &= 10^{2} \\
+\implies 2x^{2} &= 10^{2} \\
+\implies x^{2} &= 50 \\
+\implies x &= \sqrt{ 50 }
 \end{align}
 $$
 
@@ -66,10 +71,23 @@ t_R(x) = -m_T * (x - 256) + 384
 I_R_x = (sqrt(3) * 256 + 384)/(1 + sqrt(3))
 I_R_y = l_R(I_R_x)
 
+I_R = [I_R_x, I_R_y]
+
 abs(I_R_y - t_R(I_R_x)) < 0.0001
 
 I_L_x = (sqrt(3) * 256 + 128)/(1 + sqrt(3))
 I_L_y = l_L(I_L_x)
 
+I_L = [I_L_x, I_L_y]
+
 abs(I_L_y - t_L(I_L_x)) < 0.0001
+
+d_T_t_d = 10
+d_T_t = sqrt((d_T_t_d)^2 / 2)
+
+T_t_A = I_R + [d_T_t, d_T_t]
+
+l_l_L(x) = l_L(x) - d_S
+
+l_l_R(x) = l_L(x) - d_S
 ```
