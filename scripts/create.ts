@@ -21,6 +21,8 @@ const circleRadius = squareWidth / 2;
 
 const objectFromTriangleDistance = 10;
 
+// w/2 - o = sqrt((w/2 + o)^2 + (w/2)^2)
+
 const center: [number, number] = [squareWidth / 2, squareWidth / 2];
 
 const triangleTop: [number, number] = [center[0], center[1] + triangleHeight / 2];
