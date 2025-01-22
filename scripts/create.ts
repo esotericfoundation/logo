@@ -4,8 +4,8 @@ import { BackgroundType } from "../enums/BackgroundType";
 
 const svg = logo();
 const squareSvg = logo(true);
-const circleSvg = logo(true, BackgroundType.CIRCLE);
-const backgroundSvg = logo(true, BackgroundType.SQUARE);
+const circleSvg = logo(true, BackgroundType.Circle);
+const backgroundSvg = logo(true, BackgroundType.Square);
 
 writeFileSync("./logo/svg/logo.svg", svg)
 writeFileSync("./logo/svg/square/logo.svg", squareSvg);

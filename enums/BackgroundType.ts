@@ -1,5 +1,5 @@
 export enum BackgroundType {
-    NONE,
-    CIRCLE,
-    SQUARE
+    None,
+    Circle,
+    Square
 }

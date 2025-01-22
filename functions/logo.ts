@@ -1,6 +1,6 @@
 import { BackgroundType } from "../enums/BackgroundType";
 
-export function logo(includeWidth: boolean = false, backgroundType: BackgroundType = BackgroundType.NONE): string {
+export function logo(includeWidth: boolean = false, backgroundType: BackgroundType = BackgroundType.None): string {
     const squareWidth = 512;
 
     function pointToSvgPoint(point: [number, number]): string {
@@ -14,9 +14,9 @@ export function logo(includeWidth: boolean = false, backgroundType: BackgroundTy
         return [squareWidth / 2 - (x - squareWidth / 2), y];
     }
 
-    const triangleSideLength = (backgroundType === BackgroundType.CIRCLE ? 256 : 512);
+    const triangleSideLength = (backgroundType === BackgroundType.Circle ? 256 : 512);
     const triangleHeight = (triangleSideLength * Math.tan((60 * Math.PI) / 180)) / 2; // The height of the big (not upside-down) triangle.
-    const smallSquareSideLength = (backgroundType === BackgroundType.CIRCLE ? 48 : 96);
+    const smallSquareSideLength = (backgroundType === BackgroundType.Circle ? 48 : 96);
 
     const circleRadius = squareWidth / 2;
 
@@ -107,8 +107,8 @@ export function logo(includeWidth: boolean = false, backgroundType: BackgroundTy
     }
 
     switch (backgroundType) {
-        case BackgroundType.CIRCLE: {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`; break;}
-        case BackgroundType.SQUARE: {svgString += `  <rect width="100%" height="100%" fill="black" />`; break;}
+        case BackgroundType.Circle: {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`; break;}
+        case BackgroundType.Square: {svgString += `  <rect width="100%" height="100%" fill="black" />`; break;}
     }
 
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
