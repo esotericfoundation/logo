@@ -104,8 +104,8 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
     svgString += `<svg xmlns="http://www.w3.org/2000/svg" width="${squareWidth}" height="${squareWidth}">\n`;
 
     switch (backgroundType) {
-        case "circle": {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`; break;}
-        case "square": {svgString += `  <rect width="100%" height="100%" fill="black" />`; break;}
+        case "circle": {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />\n`; break;}
+        case "square": {svgString += `  <rect width="100%" height="100%" fill="black" />\n`; break;}
     }
 
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
