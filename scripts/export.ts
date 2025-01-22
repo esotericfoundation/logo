@@ -12,7 +12,7 @@ getFiles("logo/svg").forEach((fileName: string) => {
 
         const type = fileName.match(/\w+-\w+-\w+/)[0];
 
-        if (type === "cropped-square-big") {
+        if (type === "cropped-square-big" || type === "cropped-square-small") {
             return;
         }
     
