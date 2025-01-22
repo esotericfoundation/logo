@@ -97,7 +97,7 @@ const rightTriangleRight: [number, number] = [rightTriangleRightX, rightTriangle
 
 const leftTriangleLeft = flipPoint(rightTriangleRight);
 
-let svgString = `<svg width="${squareWidth}" height="${squareWidth}" xmlns="http://www.w3.org/2000/svg">\n`;
+let svgString = `<svg xmlns="http://www.w3.org/2000/svg">\n`;
 
 svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
 svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" fill="white" />\n`;
