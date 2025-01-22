@@ -5,4 +5,4 @@ const svg = logo();
 const squareSvg = logo(true);
 
 writeFileSync("./logo/svg/logo.svg", svg)
-writeFileSync("./logo/svg/square-logo.svg", squareSvg);
+writeFileSync("./logo/svg/square/logo.svg", squareSvg);
