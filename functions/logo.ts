@@ -1,4 +1,4 @@
-export function logo(includeWidth: boolean = false): string {
+export function logo(includeWidth: boolean = false, includeCircle: boolean = false): string {
     const squareWidth = 512;
 
     function pointToSvgPoint(point: [number, number]): string {
@@ -12,9 +12,9 @@ export function logo(includeWidth: boolean = false): string {
         return [squareWidth / 2 - (x - squareWidth / 2), y];
     }
     
-    const triangleSideLength = 512;
+    const triangleSideLength = 256;
     const triangleHeight = triangleSideLength * Math.tan((60 * Math.PI) / 180) / 2; // The height of the big (not upside-down) triangle.
-    const smallSquareSideLength = 96;
+    const smallSquareSideLength = 48;
     
     const circleRadius = squareWidth / 2;
     
@@ -102,6 +102,10 @@ export function logo(includeWidth: boolean = false): string {
         svgString += `<svg xmlns="http://www.w3.org/2000/svg" width="${squareWidth}" height="${squareWidth}">\n`;
     } else {
         svgString += `<svg xmlns="http://www.w3.org/2000/svg">\n`;
+    }
+
+    if (includeCircle) {
+        svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`
     }
     
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;

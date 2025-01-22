@@ -4,6 +4,7 @@ mkdir -p logo
 mkdir -p logo/svg
 mkdir -p logo/svg/square
 mkdir -p logo/svg/cropped
+mkdir -p logo/svg/rounded
 
 npx tsx ./scripts/create.ts
 
@@ -13,6 +14,7 @@ rm ./logo/svg/logo.svg
 mkdir -p logo/png
 mkdir -p logo/png/cropped
 mkdir -p logo/png/square
+mkdir -p logo/png/rounded
 
 npx svgexport "./logo/svg/cropped/logo.svg" "logo/png/cropped/0.03125x.png" 0.03125x
 npx svgexport "./logo/svg/cropped/logo.svg" "logo/png/cropped/0.0625x.png" 0.0625x
@@ -33,3 +35,12 @@ npx svgexport "./logo/svg/square/logo.svg" "logo/png/square/512x512.png" 512:
 npx svgexport "./logo/svg/square/logo.svg" "logo/png/square/1024x1024.png" 1024:
 npx svgexport "./logo/svg/square/logo.svg" "logo/png/square/2048x2048.png" 2048:
 npx svgexport "./logo/svg/square/logo.svg" "logo/png/square/4096x4096.png" 4096:
+
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/16x16.png" 16:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/32x32.png" 32:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/64x64.png" 64:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/128x128.png" 128:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/512x512.png" 512:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/1024x1024.png" 1024:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/2048x2048.png" 2048:
+npx svgexport "./logo/svg/rounded/logo.svg" "logo/png/rounded/4096x4096.png" 4096:
