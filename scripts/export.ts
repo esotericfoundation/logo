@@ -19,6 +19,6 @@ getFiles("logo/svg").forEach((fileName: string) => {
         mkdirSync("./logo/png", { recursive: true });
         mkdirSync(`./logo/png/${type}`, { recursive: true })
     
-        convertSvgToPng(svg, `${fileName.replace("logo/svg", "logo/png").replace("/logo.svg", "")}/${resolution / 256}x.png`, resolution, resolution).catch(console.error);
+        convertSvgToPng(svg, `${fileName.replace("logo/svg", "logo/png").replace("/logo.svg", "")}/${resolution / 512}x.png`, resolution, resolution).catch(console.error);
     }
 });
