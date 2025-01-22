@@ -6,6 +6,7 @@ mkdir -p logo/svg
 npx tsx ./scripts/create.ts
 
 inkscape ./logo/svg/logo.svg --export-area-drawing --export-plain-svg --export-filename=logo/svg/cropped-logo.svg
+rm ./logo/svg/logo.svg
 
 mkdir -p logo/png
 mkdir -p logo/png/cropped
