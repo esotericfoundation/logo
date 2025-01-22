@@ -107,8 +107,8 @@ export function logo(includeWidth: boolean = false, backgroundType: BackgroundTy
     }
 
     switch (backgroundType) {
-        case BackgroundType.CIRCLE: svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`;
-        case BackgroundType.SQUARE: svgString += `  <rect width="100%" height="100%" fill="black" />`
+        case BackgroundType.CIRCLE: {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`; break;}
+        case BackgroundType.SQUARE: {svgString += `  <rect width="100%" height="100%" fill="black" />`; break;}
     }
 
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
