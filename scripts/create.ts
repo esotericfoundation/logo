@@ -1,13 +1,34 @@
-import { writeFileSync } from "fs";
-import { logo } from "../functions/logo";
-import { BackgroundType } from "../enums/BackgroundType";
+import { mkdirSync, writeFileSync } from "fs";
+import { logo } from "../functions/logo.ts";
+import { backgroundTypes } from "../types/BackgroundType.ts";
+import { logoSizes } from "../types/LogoSize.ts";
+import { convertSvgToPng } from "../functions/svgToPng.ts";
+import { cropSvg } from "../functions/cropSvg.ts";
 
-const svg = logo();
-const squareSvg = logo(true);
-const circleSvg = logo(true, BackgroundType.Circle);
-const backgroundSvg = logo(true, BackgroundType.Square);
+for (const crop of [true, false]) {
+    for (const backgroundType of backgroundTypes) {
+        for (const logoSize of logoSizes) {
+            let svg = logo(backgroundType, logoSize);
 
-writeFileSync("./logo/svg/logo.svg", svg)
-writeFileSync("./logo/svg/square/logo.svg", squareSvg);
-writeFileSync("./logo/svg/rounded/logo.svg", circleSvg);
-writeFileSync("./logo/svg/background/logo.svg", backgroundSvg);
+            if (crop) {
+                svg = await cropSvg(svg);
+            }
+            
+            const fileName = `${(crop ? "cropped" : "uncropped") + "-" + backgroundType + "-" + logoSize}`;
+
+            const directory = `./logo/svg/${fileName}/`;
+
+            mkdirSync(directory, { recursive: true });
+            writeFileSync(`${directory}/logo.svg`, svg);
+
+            for (const resolution of [16, 32, 64, 128, 256, 512, 1024, 2048, 4096]) {
+                console.log("Exporting to PNG...")
+
+                mkdirSync("./logo/png", { recursive: true });
+                mkdirSync(`./logo/png/${fileName}`, { recursive: true })
+
+                convertSvgToPng(svg, `./logo/png/${fileName}/${resolution}x${resolution}.png`, resolution, resolution).catch(console.error);
+            }
+        }
+    }
+}
