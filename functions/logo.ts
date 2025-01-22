@@ -16,7 +16,7 @@ export function logo(includeWidth: boolean = false, backgroundType: BackgroundTy
 
     const triangleSideLength = (backgroundType === BackgroundType.CIRCLE ? 256 : 512);
     const triangleHeight = (triangleSideLength * Math.tan((60 * Math.PI) / 180)) / 2; // The height of the big (not upside-down) triangle.
-    const smallSquareSideLength = 48;
+    const smallSquareSideLength = (backgroundType === BackgroundType.CIRCLE ? 48 : 96);
 
     const circleRadius = squareWidth / 2;
 
