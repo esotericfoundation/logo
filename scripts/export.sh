@@ -22,6 +22,12 @@ grep -o '\"\S\+\"' ./types/BackgroundType.ts | sed 's/"//g' | while read -r back
             echo "Skipping:$file_name"
             continue
         fi
+
+        if [ "$file_name" = "none-small" ]; then
+            echo "Skipping:$file_name"
+            continue
+        fi
+
         
         echo "Processing:$file_name"
 

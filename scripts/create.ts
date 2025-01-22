@@ -9,10 +9,6 @@ for (const backgroundType of backgroundTypes) {
             continue;
         }
 
-        if (backgroundType === "none" && logoSize === "small") {
-            continue;
-        }
-
         let svg = logo(backgroundType, logoSize);
 
         const fileName = `${"uncropped-" + backgroundType + "-" + logoSize}`;

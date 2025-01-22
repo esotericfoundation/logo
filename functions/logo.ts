@@ -106,6 +106,13 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
     switch (backgroundType) {
         case "circle": {svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />\n`; break;}
         case "square": {svgString += `  <rect width="100%" height="100%" fill="black" />\n`; break;}
+        case "none": {
+            if (logoSize === "small") {
+                svgString += `  <rect width="100%" height="100%" fill="black" fill-opacity="0" />\n`
+            }
+            
+            break;
+        }
     }
 
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
