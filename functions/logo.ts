@@ -104,34 +104,14 @@ export function logo(includeWidth: boolean = false, includeCircle: boolean = fal
         svgString += `<svg xmlns="http://www.w3.org/2000/svg">\n`;
     }
 
-    svgString +=
-`
-  <defs>
-    <filter id="invert">
-      <feComponentTransfer>
-        <feFuncR type="table" tableValues="1 0" />
-        <feFuncG type="table" tableValues="1 0" />
-        <feFuncB type="table" tableValues="1 0" />
-      </feComponentTransfer>
-    </filter>
-    <filter id="normal">
-      <feComponentTransfer>
-        <feFuncR type="table" tableValues="0 1" />
-        <feFuncG type="table" tableValues="0 1" />
-        <feFuncB type="table" tableValues="0 1" />
-      </feComponentTransfer>
-    </filter>
-  </defs>
-`
-
     if (includeCircle) {
-        svgString += `  <circle cx="50%" cy="50%" r="50%" style="filter: url(#normal);" />`
+        svgString += `  <circle cx="50%" cy="50%" r="50%" fill="black" />`
     }
     
-    svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" style="filter: url(#invert);" />\n`;
-    svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" style="filter: url(#invert);" />\n`;
-    svgString += `  <polygon points="${pointToSvgPoint(rightTriangleBottom)} ${pointToSvgPoint(rightTriangleRight)} ${pointToSvgPoint(rightTriangleTopLeft)}" style="filter: url(#invert);" />\n`;
-    svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointToSvgPoint(leftTriangleLeft)} ${pointToSvgPoint(leftTriangleTopRight)}" style="filter: url(#invert);" />\n`;
+    svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
+    svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" fill="white" />\n`;
+    svgString += `  <polygon points="${pointToSvgPoint(rightTriangleBottom)} ${pointToSvgPoint(rightTriangleRight)} ${pointToSvgPoint(rightTriangleTopLeft)}" fill="white" />\n`;
+    svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointToSvgPoint(leftTriangleLeft)} ${pointToSvgPoint(leftTriangleTopRight)}" fill="white" />\n`;
     
     svgString += `</svg>\n`;
 
