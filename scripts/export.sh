@@ -7,6 +7,12 @@ grep -o '\"\S\+\"' ./types/BackgroundType.ts | sed 's/"//g' | while read -r back
     grep -o '\"\S\+\"' ./types/LogoSize.ts | sed 's/"//g' | while read -r logo_size; do
         file_name="$background_type-$logo_size"
         
+        # Skip the loop if file_name is "cropped-square-big"
+        if [ "$file_name" = "square-big" ]; then
+            echo "Skipping:$file_name"
+            continue
+        fi
+        
         echo "Processing:$file_name"
 
         mkdir -p logo/svg/cropped-$file_name
