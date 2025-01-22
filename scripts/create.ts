@@ -8,6 +8,10 @@ import { cropSvg } from "../functions/cropSvg.ts";
 for (const crop of [true, false]) {
     for (const backgroundType of backgroundTypes) {
         for (const logoSize of logoSizes) {
+            if (backgroundType === "circle" && logoSize === "big") {
+                continue;
+            }
+
             let svg = logo(backgroundType, logoSize);
 
             if (crop) {
