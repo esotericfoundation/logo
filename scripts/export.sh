@@ -4,8 +4,8 @@ npx tsx ./scripts/create.ts
 
 inkscape ./logo/svg/logo.svg --export-area-drawing --export-plain-svg --export-filename=logo/svg/cropped-logo.svg
 
-mkdir logo/png
-mkdir logo/png/cropped
+mkdir -p logo/png
+mkdir -p logo/png/cropped
 
 npx svgexport "./logo/svg/cropped-logo.svg" "logo/png/cropped/0.03125x.png" 0.03125x
 npx svgexport "./logo/svg/cropped-logo.svg" "logo/png/cropped/0.0625x.png" 0.0625x
