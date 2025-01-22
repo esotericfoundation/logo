@@ -1,5 +1,8 @@
 #!/bin/bash
 # Exports the logo to a PNG file.
+mkdir -p logo
+mkdir -p logo/svg
+
 npx tsx ./scripts/create.ts
 
 inkscape ./logo/svg/logo.svg --export-area-drawing --export-plain-svg --export-filename=logo/svg/cropped-logo.svg
