@@ -1,4 +1,4 @@
-export function logo(): string {
+export function logo(includeWidth: boolean = false): string {
     const squareWidth = 512;
 
     function pointToSvgPoint(point: [number, number]): string {
@@ -96,7 +96,13 @@ export function logo(): string {
     
     const leftTriangleLeft = flipPoint(rightTriangleRight);
     
-    let svgString = `<svg xmlns="http://www.w3.org/2000/svg">\n`;
+    let svgString = "";
+
+    if (includeWidth) {
+        svgString += `<svg xmlns="http://www.w3.org/2000/svg" width="${squareWidth}" height="${squareWidth}">\n`;
+    } else {
+        svgString += `<svg xmlns="http://www.w3.org/2000/svg">\n`;
+    }
     
     svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(center)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
     svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" fill="white" />\n`;
