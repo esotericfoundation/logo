@@ -10,3 +10,5 @@ package-lock.json
 # Exported image files
 *.svg
 *.png
+
+!assets/**/*.svg
