@@ -1,8 +1,8 @@
 # Esoteric Foundation Logo
 
-[![Project status: maintained](./assets/images/badges/status.svg)](./)
+[![Project status: maintained][status]][root]
 
-The official logo of the [Esoteric Foundation](https://esoteric.foundation).
+The official logo of the [Esoteric Foundation][author].
 
 ## License
 
@@ -13,3 +13,13 @@ The official logo of the [Esoteric Foundation](https://esoteric.foundation).
 
   <a href="https://creativecommons.org/"><img style="height: 22px !important; margin-left: 3px; vertical-align: middle" src="./assets/images/icons/cc/cc.svg" alt="Creative Commons logo" /><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img style="height: 22px !important; margin-left: 3px; vertical-align: middle" src="./assets/images/icons/cc/by.svg" alt="Creative Commons Attribution icon" /></a><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img style="height: 22px !important; margin-left: 3px; vertical-align: middle" src="./assets/images/icons/cc/sa.svg" alt="Creative Commons ShareAlike icon" /></a>
 </p>
+
+<!-- Link aliases -->
+
+[root]: /
+
+[author]: https://esoteric.foundation
+
+<!-- Badges -->
+
+[status]: ./assets/images/badges/status.svg
