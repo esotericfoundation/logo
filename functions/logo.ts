@@ -17,11 +17,14 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
 
     const triangleSideLength = (logoSize === "small" ? 256 : 512);
     const triangleHeight = (triangleSideLength * Math.tan((60 * Math.PI) / 180)) / 2; // The height of the big (not upside-down) triangle.
-    const smallSquareSideLength = (logoSize === "small" ? 48 : 96);
+
+    const triangleCenterToEdge = (Math.sqrt(2) / 2) * triangleSideLength;
+
+    const smallSquareSideLength = 2 * (triangleCenterToEdge / 10);
 
     const circleRadius = squareWidth / 2;
 
-    const objectFromTriangleDistance = 10;
+    const objectFromTriangleDistance = triangleCenterToEdge / 15;
 
     // w/2 - o = sqrt((w/2 + o)^2 + (w/2)^2)
 
@@ -32,6 +35,8 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
 
     const triangleBottom: [number, number] = [origin[0], origin[1] - triangleHeight / 2];
     console.log(`Found the bottom of the triangle ${triangleBottom}`);
+
+    const triangleCenter: [number, number] = [squareWidth / 2, triangleBottom[1] + triangleSideLength / 2];
 
     // Calculating the side length s:
     // tan(60 degrees) = h / (s / 2)
@@ -44,7 +49,7 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
 
     const triangleLeft: [number, number] = [triangleBottom[0] - triangleSideLength / 2, triangleBottom[1]];
 
-    const smallSquareTop: [number, number] = [origin[0], origin[1] - Math.sqrt(2) * objectFromTriangleDistance];
+    const smallSquareTop: [number, number] = [origin[0], triangleCenter[1] - Math.sqrt(2) * objectFromTriangleDistance];
 
     const smallSquareDiagonal = 2 * Math.sqrt(smallSquareSideLength ** 2 / 2);
 
@@ -115,7 +120,7 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
         }
     }
 
-    svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(origin)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
+    svgString += `  <polygon points="${pointToSvgPoint(triangleLeft)} ${pointToSvgPoint(triangleCenter)} ${pointToSvgPoint(triangleRight)} ${pointToSvgPoint(triangleTop)}" fill="white" />\n`;
     svgString += `  <polygon points="${pointToSvgPoint(smallSquareTop)} ${pointToSvgPoint(smallSquareRight)} ${pointToSvgPoint(smallSquareBottom)} ${pointToSvgPoint(smallSquareLeft)}" fill="white" />\n`;
     svgString += `  <polygon points="${pointToSvgPoint(rightTriangleBottom)} ${pointToSvgPoint(rightTriangleRight)} ${pointToSvgPoint(rightTriangleTopLeft)}" fill="white" />\n`;
     svgString += `  <polygon points="${pointToSvgPoint(leftTriangleBottom)} ${pointToSvgPoint(leftTriangleLeft)} ${pointToSvgPoint(leftTriangleTopRight)}" fill="white" />\n`;
