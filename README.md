@@ -4,6 +4,30 @@
 
 The official logo of the [Esoteric Foundation][author].
 
+## Migration to Geogebra
+
+### Serious Branch Considerations
+
+#### Equilateral
+
+- `equilateral-center`
+- `equilateral-parallel`
+- `equilateral-parallel-circle-center`
+
+#### $b = h$
+
+- `base-equals-height-parallel`
+- `base-equals-height-parallel-circle`
+- `base-equals-height-parallel-circle-center`
+
+### Garbage Branches
+
+- `equilateral-parallel-circle`:
+  This branch sucks cause the square is way too far from the triangle.
+
+- `base-equals-height-center`:
+  The triangle is WAY too fat.
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
