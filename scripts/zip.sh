@@ -8,4 +8,6 @@ cd ../logo
 
 zip esoteric-foundation-logo.ggb *
 
+mv *.ggb ../
+
 cd "$original" || exit 1
