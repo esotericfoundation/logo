@@ -16,7 +16,11 @@ export function logo(backgroundType: BackgroundType = "none", logoSize: LogoSize
     }
 
     const triangleSideLength = (logoSize === "small" ? 256 : 512);
+
+    // tan(60 degrees) = h / (s / 2)
+    // => h = tan(60 degrees) * (s / 2)
     const triangleHeight = (triangleSideLength * Math.tan((60 * Math.PI) / 180)) / 2; // The height of the big (not upside-down) triangle.
+
     const smallSquareSideLength = (logoSize === "small" ? 48 : 96);
 
     const circleRadius = squareWidth / 2;
