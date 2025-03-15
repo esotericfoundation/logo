@@ -31,17 +31,21 @@ The official logo of the [Esoteric Foundation][author].
 
 ### Garbage Branches
 
+#### Equilateral
+
 - `equilateral-parallel-circle`:
   This branch sucks cause the square is way too far from the triangle.
   ![Equilateral parallel circle logo](./assets/images/screenshots/logo/equilateral-parallel-circle.png)
 
-- `base-equals-height-center`:
-  The triangle is WAY too fat.
-  ![Base equals height center](./assets/images/screenshots/logo/base-equals-height-center.png)
-
 - `equilateral-center`:
   The triangle is too fat.
   ![Equilateral center logo](./assets/images/screenshots/logo/equilateral-center.png)
+
+#### $b = h$
+
+- `base-equals-height-center`:
+  The triangle is WAY too fat.
+  ![Base equals height center](./assets/images/screenshots/logo/base-equals-height-center.png)
 
 ## License
 
