@@ -1,15 +1,5 @@
 {
-  "dependencies": {
-    "canvas": "^3.1.0",
-    "esoteric-utility": "^1.1.2",
-    "sharp": "^0.33.5",
-    "svgexport": "^0.4.2",
-    "tsx": "^4.19.2",
-    "xml2js": "^0.6.2"
-  },
   "devDependencies": {
-    "@types/node": "^22.10.7",
-    "@types/xml2js": "^0.4.14"
-  },
-  "type": "module"
+    "xml-formatter": "^3.6.4"
+  }
 }

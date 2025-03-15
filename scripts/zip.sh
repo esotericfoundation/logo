@@ -1,0 +1,13 @@
+#!/bin/bash
+
+original="$(pwd)"
+
+cd "$(dirname "$0")" || exit 1
+
+cd ../logo
+
+zip esoteric-foundation-logo.ggb *
+
+mv *.ggb ../
+
+cd "$original" || exit 1
