@@ -26,4 +26,8 @@ unzip -o $file
 
 mv ./$file ../
 
+cd ../
+
+node ./scripts/js/format.js
+
 cd "$original" || exit 1
