@@ -29,7 +29,7 @@ The official logo of the [Esoteric Foundation][author].
 
 - `equilateral-center`:
   The triangle is too fat.
-  ![Equilateral center logo](./assets/images/screenshots/logo/image.png)
+  ![Equilateral center logo](./assets/images/screenshots/logo/logo.png)
 
 ## License
 

@@ -12,6 +12,7 @@ package-lock.json
 *.png
 
 !assets/**/*.svg
+!assets/**/*.png
 
 # Exported Geogebra zip file
 *.ggb
