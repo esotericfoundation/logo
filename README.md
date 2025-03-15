@@ -14,6 +14,8 @@ The official logo of the [Esoteric Foundation][author].
   ![Equilateral parallel logo](./assets/images/screenshots/logo/equilateral-parallel.png)
   (Square can be made closer to triangle)
 - `equilateral-parallel-circle-center`
+  ![Equilateral parallel circle center logo](./assets/images/screenshots/logo/equilateral-parallel-circle-center.png)
+  (Square can NOT be made closer to triangle)
 
 #### $b = h$
 
