@@ -26,6 +26,8 @@ The official logo of the [Esoteric Foundation][author].
   ![Base equals height parallel circle logo](./assets/images/screenshots/logo/base-equals-height-parallel-circle.png)
   (Square can NOT be made closer to triangle)
 - `base-equals-height-parallel-circle-center`
+  ![Base equals height parallel circle center logo](./assets/images/screenshots/logo/base-equals-height-parallel-circle-center.png)
+  (Square can NOT be made closer to triangle)
 
 ### Garbage Branches
 
