@@ -20,6 +20,8 @@ The official logo of the [Esoteric Foundation][author].
 #### $b = h$
 
 - `base-equals-height-parallel`
+  ![Base equals height parallel logo](./assets/images/screenshots/logo/base-equals-height-parallel.png)
+  (Square can be made closer to triangle)
 - `base-equals-height-parallel-circle`
 - `base-equals-height-parallel-circle-center`
 
