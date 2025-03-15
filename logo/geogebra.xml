@@ -207,31 +207,6 @@
         <element type="numeric" label="d">
             <value val="1.4142135623730951"/>
         </element>
-        <expression label="d_{square}" exp="d / 10"/>
-        <element type="numeric" label="d_{square}">
-            <value val="0.1414213562373095"/>
-        </element>
-        <command name="Point">
-            <input a0="M" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * d_{square})]"/>
-            <output a0="T_{1}"/>
-        </command>
-        <element type="point" label="T_{1}">
-            <show object="false" label="true"/>
-            <objColor r="97" g="97" b="97" alpha="0"/>
-            <layer val="0"/>
-            <labelMode val="0"/>
-            <pointSize val="5"/>
-            <pointStyle val="0"/>
-            <coords x="0.1" y="0.9" z="1"/>
-        </element>
-        <element type="numeric" label="T1">
-            <value val="0"/>
-            <show object="false" label="true"/>
-            <layer val="0"/>
-            <labelMode val="1"/>
-            <animation speed="1" type="0" playing="false"/>
-            <auxiliary val="true"/>
-        </element>
         <expression label="s_{square}" exp="d / 5"/>
         <element type="numeric" label="s_{square}">
             <value val="0.282842712474619"/>
@@ -262,6 +237,31 @@
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0" y="0.7773502691896259" z="1"/>
+        </element>
+        <expression label="d_{square}" exp="sqrt(Distance[T_{square}, M]^(2) / 2)"/>
+        <element type="numeric" label="d_{square}">
+            <value val="0.1574371344853749"/>
+        </element>
+        <command name="Point">
+            <input a0="M" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * d_{square})]"/>
+            <output a0="T_{1}"/>
+        </command>
+        <element type="point" label="T_{1}">
+            <show object="false" label="true"/>
+            <objColor r="97" g="97" b="97" alpha="0"/>
+            <layer val="0"/>
+            <labelMode val="0"/>
+            <pointSize val="5"/>
+            <pointStyle val="0"/>
+            <coords x="0.11132486540518706" y="0.888675134594813" z="1"/>
+        </element>
+        <element type="numeric" label="T1">
+            <value val="0"/>
+            <show object="false" label="true"/>
+            <layer val="0"/>
+            <labelMode val="1"/>
+            <animation speed="1" type="0" playing="false"/>
+            <auxiliary val="true"/>
         </element>
         <command name="Point">
             <input a0="T_{square}" a1="Vector[(Vector[((-(sqrt(2) / 2)), (-(sqrt(2) / 2)))] * s_{square})]"/>
@@ -453,7 +453,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="0.5958548115672618" y="0.9732050807568877" z="1"/>
+            <coords x="0.6071796769724489" y="0.9845299461620748" z="1"/>
         </element>
         <command name="Point">
             <input a0="C" a1="Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]"/>
@@ -466,7 +466,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="0.44944465005348644" y="1.2267949192431125" z="1"/>
+            <coords x="0.4607695154586735" y="1.2381197846482994" z="1"/>
         </element>
         <expression label="p" exp="y = 0" type="line"/>
         <element type="line" label="p">
@@ -490,7 +490,7 @@
             <labelMode val="0"/>
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
-            <coords x="0" y="1" z="-1.2267949192431125"/>
+            <coords x="0" y="1" z="-1.2381197846482994"/>
         </element>
         <command name="Intersect">
             <input a0="L_{2}" a1="n"/>
@@ -503,7 +503,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="0.16988893001069733" y="0.2453589838486225" z="0.2"/>
+            <coords x="0.17215390309173467" y="0.24762395692965988" z="0.2"/>
         </element>
         <command name="Polygon">
             <input a0="L_{right triangle}" a1="E" a2="B_{righttriangle}"/>
@@ -529,7 +529,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="0" y="0.40000000000000013" z="-0.4907179676972452"/>
+            <coords x="0" y="0.3999999999999998" z="-0.49524791385931943"/>
         </element>
         <element type="segment" label="l_{right triangle}">
             <show object="false" label="true"/>
@@ -544,7 +544,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="0.25358983848622474" y="-0.25358983848622474" z="0.09569219381653071"/>
+            <coords x="0.25358983848622463" y="-0.2535898384862244" z="0.09569219381653038"/>
         </element>
         <element type="segment" label="e">
             <show object="false" label="true"/>
@@ -558,7 +558,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="-0.25358983848622474" y="-0.1464101615137754" z="0.29358983848622455"/>
+            <coords x="-0.25358983848622463" y="-0.1464101615137754" z="0.2981197846482993"/>
         </element>
         <command name="Line">
             <input a0="B_{square}" a1="L_{square}"/>
@@ -623,7 +623,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="-0.44944465005348644" y="1.2267949192431125" z="1"/>
+            <coords x="-0.4607695154586735" y="1.2381197846482994" z="1"/>
         </element>
         <command name="Point">
             <input a0="F" a1="Vector[(((-(sqrt(2) / 2)), sqrt(2) / 2) * d_{square})]"/>
@@ -636,7 +636,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="-0.5958548115672618" y="0.9732050807568877" z="1"/>
+            <coords x="-0.6071796769724489" y="0.9845299461620748" z="1"/>
         </element>
         <command name="Line">
             <input a0="Point[G, Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]]" a1="p"/>
@@ -649,7 +649,7 @@
             <labelMode val="0"/>
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
-            <coords x="0" y="1" z="-1.2267949192431125"/>
+            <coords x="0" y="1" z="-1.2381197846482994"/>
         </element>
         <command name="Intersect">
             <input a0="L_{3}" a1="n"/>
@@ -662,7 +662,7 @@
             <labelMode val="0"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
-            <coords x="-0.16988893001069733" y="0.2453589838486225" z="0.2"/>
+            <coords x="-0.17215390309173467" y="0.24762395692965988" z="0.2"/>
         </element>
         <command name="Polygon">
             <input a0="J" a1="I" a2="H"/>
@@ -687,7 +687,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="0.25358983848622474" y="0.25358983848622474" z="-0.09569219381653071"/>
+            <coords x="0.25358983848622463" y="0.2535898384862244" z="-0.09569219381653038"/>
         </element>
         <element type="segment" label="j_1">
             <show object="false" label="false"/>
@@ -701,7 +701,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="-0.25358983848622474" y="0.1464101615137754" z="-0.29358983848622455"/>
+            <coords x="-0.25358983848622463" y="0.1464101615137754" z="-0.2981197846482993"/>
         </element>
         <element type="segment" label="i_1">
             <show object="false" label="false"/>
@@ -715,7 +715,7 @@
             <keepTypeOnTransform val="true"/>
             <startStyle val="default"/>
             <endStyle val="default"/>
-            <coords x="0" y="-0.40000000000000013" z="0.4907179676972452"/>
+            <coords x="0" y="-0.3999999999999998" z="0.49524791385931943"/>
         </element>
         <command name="Polygon">
             <input a0="L" a1="T" a2="R" a3="M"/>
