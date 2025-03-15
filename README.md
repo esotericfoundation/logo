@@ -10,7 +10,6 @@ The official logo of the [Esoteric Foundation][author].
 
 #### Equilateral
 
-- `equilateral-center`
 - `equilateral-parallel`
 - `equilateral-parallel-circle-center`
 
@@ -27,6 +26,10 @@ The official logo of the [Esoteric Foundation][author].
 
 - `base-equals-height-center`:
   The triangle is WAY too fat.
+
+- `equilateral-center`:
+  The triangle is too fat.
+  ![Equilateral center logo](./assets/images/screenshots/logo/image.png)
 
 ## License
 
