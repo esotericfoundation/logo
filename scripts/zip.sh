@@ -4,8 +4,8 @@ original="$(pwd)"
 
 cd "$(dirname "$0")" || exit 1
 
-cd ..
+cd ../logo
 
-zip esoteric-foundation-logo.ggb ./logo/*
+zip esoteric-foundation-logo.ggb *
 
 cd "$original" || exit 1
