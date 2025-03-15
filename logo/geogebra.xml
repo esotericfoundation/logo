@@ -33,7 +33,7 @@
         <size width="722" height="644"/>
         <coordSystem xZero="205.23579933950333" yZero="418.1283733332368" scale="101.18311336650818" yscale="101.18311336650933"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1"/>
-        <bgColor r="255" g="255" b="255"/>
+        <bgColor r="0" g="0" b="0"/>
         <axesColor r="37" g="37" b="37"/>
         <gridColor r="192" g="192" b="192"/>
         <lineStyle axes="1" grid="0"/>
@@ -284,13 +284,13 @@
         <element type="polygon" label="poly1">
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="1"/>
+            <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="j">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -304,7 +304,7 @@
         </element>
         <element type="segment" label="k">
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
@@ -318,7 +318,7 @@
         </element>
         <element type="segment" label="l">
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
@@ -332,7 +332,7 @@
         </element>
         <element type="segment" label="m">
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
@@ -499,13 +499,13 @@
         <element type="polygon" label="t1">
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="1"/>
+            <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="b_{righttriangle}">
             <show object="false" label="true"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelOffset x="10" y="50"/>
             <labelMode val="0"/>
@@ -520,7 +520,7 @@
         </element>
         <element type="segment" label="l_{right triangle}">
             <show object="false" label="true"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelOffset x="32" y="32"/>
             <labelMode val="0"/>
@@ -535,7 +535,7 @@
         </element>
         <element type="segment" label="e">
             <show object="false" label="true"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -658,13 +658,13 @@
         <element type="polygon" label="t2">
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="1"/>
+            <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="h_1">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -678,7 +678,7 @@
         </element>
         <element type="segment" label="j_1">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -692,7 +692,7 @@
         </element>
         <element type="segment" label="i_1">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -711,13 +711,13 @@
         <element type="polygon" label="q1">
             <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="1"/>
+            <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="l_1">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -731,7 +731,7 @@
         </element>
         <element type="segment" label="t">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -745,7 +745,7 @@
         </element>
         <element type="segment" label="r">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
@@ -759,7 +759,7 @@
         </element>
         <element type="segment" label="m_1">
             <show object="false" label="false"/>
-            <objColor r="0" g="0" b="0" alpha="0"/>
+            <objColor r="255" g="255" b="255" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
