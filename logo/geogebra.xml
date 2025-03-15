@@ -282,7 +282,7 @@
             <output a0="poly1" a1="j" a2="k" a3="l" a4="m" a5="A" a6="B"/>
         </command>
         <element type="polygon" label="poly1">
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
@@ -294,7 +294,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -308,7 +308,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -322,7 +322,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -336,7 +336,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="true"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -497,7 +497,7 @@
             <output a0="t1" a1="b_{righttriangle}" a2="l_{right triangle}" a3="e"/>
         </command>
         <element type="polygon" label="t1">
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
@@ -510,7 +510,7 @@
             <labelOffset x="10" y="50"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -525,7 +525,7 @@
             <labelOffset x="32" y="32"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -539,7 +539,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -656,7 +656,7 @@
             <output a0="t2" a1="h_1" a2="j_1" a3="i_1"/>
         </command>
         <element type="polygon" label="t2">
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
@@ -668,7 +668,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -682,7 +682,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -696,7 +696,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -709,7 +709,7 @@
             <output a0="q1" a1="l_1" a2="t" a3="r" a4="m_1"/>
         </command>
         <element type="polygon" label="q1">
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="204"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
             <layer val="0"/>
@@ -721,7 +721,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -735,7 +735,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -749,7 +749,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
@@ -763,7 +763,7 @@
             <layer val="0"/>
             <labelMode val="0"/>
             <auxiliary val="false"/>
-            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <lineStyle thickness="0" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="implicit"/>
             <outlyingIntersections val="false"/>
             <keepTypeOnTransform val="true"/>
