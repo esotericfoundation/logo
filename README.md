@@ -37,6 +37,7 @@ The official logo of the [Esoteric Foundation][author].
 
 - `base-equals-height-center`:
   The triangle is WAY too fat.
+  ![Base equals height center](./assets/images/screenshots/logo/base-equals-height-center.png)
 
 - `equilateral-center`:
   The triangle is too fat.
