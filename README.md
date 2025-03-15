@@ -33,6 +33,7 @@ The official logo of the [Esoteric Foundation][author].
 
 - `equilateral-parallel-circle`:
   This branch sucks cause the square is way too far from the triangle.
+  ![Equilateral parallel circle logo](./assets/images/screenshots/logo/equilateral-parallel-circle.png)
 
 - `base-equals-height-center`:
   The triangle is WAY too fat.
