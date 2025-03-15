@@ -11,6 +11,8 @@ The official logo of the [Esoteric Foundation][author].
 #### Equilateral
 
 - `equilateral-parallel`
+  ![Equilateral parallel logo](./assets/images/screenshots/logo/equilateral-parallel.png)
+  (Square can be made closer to triangle)
 - `equilateral-parallel-circle-center`
 
 #### $b = h$
@@ -29,7 +31,7 @@ The official logo of the [Esoteric Foundation][author].
 
 - `equilateral-center`:
   The triangle is too fat.
-  ![Equilateral center logo](./assets/images/screenshots/logo/logo.png)
+  ![Equilateral center logo](./assets/images/screenshots/logo/equilateral-center.png)
 
 ## License
 
