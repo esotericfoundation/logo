@@ -33,7 +33,7 @@
         <size width="722" height="644"/>
         <coordSystem xZero="205.23579933950333" yZero="418.1283733332368" scale="101.18311336650818" yscale="101.18311336650933"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1"/>
-        <bgColor r="0" g="0" b="0"/>
+        <bgColor r="255" g="255" b="255"/>
         <axesColor r="37" g="37" b="37"/>
         <gridColor r="192" g="192" b="192"/>
         <lineStyle axes="1" grid="0"/>
@@ -283,9 +283,9 @@
         </command>
         <element type="polygon" label="poly1">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
-            <layer val="0"/>
+            <layer val="1"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="j">
@@ -471,7 +471,7 @@
             <output a0="n"/>
         </command>
         <element type="line" label="n">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -484,7 +484,7 @@
             <output a0="E"/>
         </command>
         <element type="point" label="E">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -498,9 +498,9 @@
         </command>
         <element type="polygon" label="t1">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
-            <layer val="0"/>
+            <layer val="1"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="b_{righttriangle}">
@@ -657,9 +657,9 @@
         </command>
         <element type="polygon" label="t2">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
-            <layer val="0"/>
+            <layer val="1"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="h_1">
@@ -710,9 +710,9 @@
         </command>
         <element type="polygon" label="q1">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1"/>
-            <layer val="0"/>
+            <layer val="1"/>
             <labelMode val="0"/>
         </element>
         <element type="segment" label="l_1">
@@ -770,6 +770,47 @@
             <startStyle val="default"/>
             <endStyle val="default"/>
             <coords x="1" y="-1" z="1"/>
+        </element>
+        <command name="Circle">
+            <input a0="T" a1="L" a2="R"/>
+            <output a0="c"/>
+        </command>
+        <element type="conic" label="c">
+            <show object="false" label="true"/>
+            <objColor r="0" g="0" b="0" alpha="0"/>
+            <layer val="1"/>
+            <labelMode val="0"/>
+            <lineStyle thickness="5" type="0" typeHidden="1" opacity="178"/>
+            <eqnStyle style="specific"/>
+            <eigenvectors x0="1" y0="0" z0="1.0" x1="0" y1="1" z1="1.0"/>
+            <matrix A0="1" A1="1" A2="-1" A3="0" A4="0" A5="-0.5773502691896256"/>
+        </element>
+        <command name="Center">
+            <input a0="c"/>
+            <output a0="K"/>
+        </command>
+        <element type="point" label="K">
+            <show object="false" label="true"/>
+            <objColor r="97" g="97" b="97" alpha="0"/>
+            <layer val="1"/>
+            <labelMode val="0"/>
+            <pointSize val="5"/>
+            <pointStyle val="0"/>
+            <coords x="0" y="0.5773502691896256" z="1"/>
+        </element>
+        <command name="Circle">
+            <input a0="K" a1="3"/>
+            <output a0="c_1"/>
+        </command>
+        <element type="conic" label="c_1">
+            <show object="true" label="false" ev="4"/>
+            <objColor r="0" g="0" b="0" alpha="1"/>
+            <layer val="0"/>
+            <labelMode val="0"/>
+            <lineStyle thickness="1" type="0" typeHidden="1" opacity="178"/>
+            <eqnStyle style="specific"/>
+            <eigenvectors x0="1" y0="0" z0="1.0" x1="0" y1="1" z1="1.0"/>
+            <matrix A0="1" A1="1" A2="-8.666666666666666" A3="0" A4="0" A5="-0.5773502691896256"/>
         </element>
     </construction>
 </geogebra>
