@@ -16,3 +16,17 @@ package-lock.json
 
 # Exported Geogebra zip file
 *.ggb
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build/
+
+# Gradle wrapper
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
