@@ -2,7 +2,7 @@
 
 ## [Geogebra][geogebra]
 
-<sup>By [GeoGebra][geogebra-author]&reg;</sup>\
+<sup>By [GeoGebra GmbH][geogebra-author]</sup>\
 <sup>Licensed under the [Geogebra License][geogebra-license]</sup>
 
 <!-- Link aliases -->
