@@ -2,9 +2,8 @@
 
 ## [Geogebra][geogebra]
 
-<sup>By [GeoGebra][geogebra-author]&reg;</sup>
-
-Licensed under the [Geogebra License][geogebra-license].
+<sup>By [GeoGebra][geogebra-author]&reg;</sup>\
+<sup>Licensed under the [Geogebra License][geogebra-license]</sup>
 
 <!-- Link aliases -->
 
