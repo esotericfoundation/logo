@@ -4,49 +4,6 @@
 
 The official logo of the [Esoteric Foundation][author].
 
-## Migration to Geogebra
-
-### Serious Branch Considerations
-
-#### Equilateral
-
-- `equilateral-parallel`
-  ![Equilateral parallel logo](./assets/images/screenshots/logo/equilateral-parallel.png)
-  (Square can be made closer to triangle)
-- `equilateral-parallel-circle-center`
-  ![Equilateral parallel circle center logo](./assets/images/screenshots/logo/equilateral-parallel-circle-center.png)
-  (Square can NOT be made closer to triangle)
-
-#### $b = h$
-
-- `base-equals-height-parallel`
-  ![Base equals height parallel logo](./assets/images/screenshots/logo/base-equals-height-parallel.png)
-  (Square can be made closer to triangle)
-- `base-equals-height-parallel-circle`
-  ![Base equals height parallel circle logo](./assets/images/screenshots/logo/base-equals-height-parallel-circle.png)
-  (Square can NOT be made closer to triangle)
-- `base-equals-height-parallel-circle-center`
-  ![Base equals height parallel circle center logo](./assets/images/screenshots/logo/base-equals-height-parallel-circle-center.png)
-  (Square can NOT be made closer to triangle)
-
-### Garbage Branches
-
-#### Equilateral
-
-- `equilateral-parallel-circle`:
-  This branch sucks cause the square is way too far from the triangle.
-  ![Equilateral parallel circle logo](./assets/images/screenshots/logo/equilateral-parallel-circle.png)
-
-- `equilateral-center`:
-  The triangle is too fat.
-  ![Equilateral center logo](./assets/images/screenshots/logo/equilateral-center.png)
-
-#### $b = h$
-
-- `base-equals-height-center`:
-  The triangle is WAY too fat.
-  ![Base equals height center](./assets/images/screenshots/logo/base-equals-height-center.png)
-
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
