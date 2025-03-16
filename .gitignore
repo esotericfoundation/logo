@@ -2,7 +2,7 @@
 .~lock.*#
 
 # Node modules
-node_modules
+node_modules/
 
 # Unneeded package.json history and information
 package-lock.json
