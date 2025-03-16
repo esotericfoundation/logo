@@ -4,6 +4,10 @@
 
 The official logo of the [Esoteric Foundation][author].
 
+## Information
+
+- [Credit][credit]
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
@@ -23,3 +27,7 @@ The official logo of the [Esoteric Foundation][author].
 <!-- Badges -->
 
 [status]: ./assets/images/badges/status.svg
+
+<!-- Files -->
+
+[credit]: ./CREDIT.md
