@@ -3,10 +3,11 @@
 ## [Geogebra][geogebra]
 
 <sup>By [GeoGebra GmbH][geogebra-author]</sup>\
-<sup>Licensed under the [Geogebra License][geogebra-license]</sup>
+<sup>[Licensed][geogebra-license-notice] under the [Geogebra License][geogebra-license]</sup>
 
 <!-- Link aliases -->
 
 [geogebra]: https://github.com/geogebra/geogebra/tree/5.2.871.0
 [geogebra-author]: https://github.com/geogebra
+[geogebra-license-notice]: https://github.com/geogebra/geogebra/blob/5.2.871.0/doc/Libraries.md#geogebras-licence
 [geogebra-license]: https://www.geogebra.org/license
