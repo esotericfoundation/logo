@@ -7,6 +7,6 @@
 
 <!-- Link aliases -->
 
-[geogebra]: https://github.com/geogebra/geogebra
+[geogebra]: https://github.com/geogebra/geogebra/tree/5.2.871.0
 [geogebra-author]: https://github.com/geogebra
 [geogebra-license]: https://www.geogebra.org/license
