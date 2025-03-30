@@ -8,6 +8,8 @@ gradle desktop:installDist
 
 popd >/dev/null
 
+bash ./scripts/zip.sh
+
 java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar ./esoteric-foundation-logo.ggb
 
 bash ./scripts/unzip.sh
