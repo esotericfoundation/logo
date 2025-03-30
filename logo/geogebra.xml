@@ -53,7 +53,7 @@
     </kernel>
     <tableview min="0.0" max="0.0" step="0.0"/>
     <scripting blocked="false" disabled="false"/>
-    <construction title="" author="" date="">
+    <construction title="Esoteric Foundation Logo" author="Esoteric Foundation" date="">
         <element type="numeric" label="L_{x}">
             <value val="-1.0"/>
             <slider min="-5" max="5" absoluteScreenLocation="true" width="200.0" fixed="false" horizontal="true" showAlgebra="true"/>
