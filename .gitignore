@@ -23,6 +23,9 @@ package-lock.json
 # Ignore Gradle build output directory
 build/
 
+# Ignore binary files
+bin/
+
 # Gradle wrapper
 gradlew
 gradlew.bat
