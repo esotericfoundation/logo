@@ -30,3 +30,6 @@ gradle/wrapper/gradle-wrapper.jar
 
 # IntelliJ IDEA
 .idea/
+
+# Kotlin output
+.kotlin/sessions/kotlin-compiler-[0-9]*.salive
