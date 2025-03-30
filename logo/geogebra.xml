@@ -40,9 +40,6 @@
         <axis id="1" show="false" label="" unitLabel="" tickStyle="1" showNumbers="true"/>
     </euclidianView>
     <spreadsheetView></spreadsheetView>
-    <algebraView>
-        <mode val="3"/>
-    </algebraView>
     <kernel>
         <continuous val="false"/>
         <usePathAndRegionParameters val="true"/>
