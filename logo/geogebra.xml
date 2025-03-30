@@ -48,7 +48,7 @@
         <usePathAndRegionParameters val="true"/>
         <decimals val="13"/>
         <angleUnit val="degree"/>
-        <algebraStyle val="3" spreadsheet="0"/>
+        <algebraStyle val="0" spreadsheet="0"/>
         <coordStyle val="0"/>
     </kernel>
     <tableview min="0" max="0" step="0"/>
