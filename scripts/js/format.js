@@ -25,7 +25,7 @@ function getFiles(directory) {
     return output;
 }
 
-getFiles(".").forEach((file) => {
+getFiles("./logo").forEach((file) => {
     const content = readFileSync(file);
     const formatted = xmlFormat(content.toString(), {lineSeparator: "\n", collapseContent: true}) + "\n";
     writeFileSync(file, formatted);
