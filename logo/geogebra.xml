@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <geogebra format="5.0" version="5.2.871.0" app="classic" platform="d" id="4323beda-460b-469e-b4c1-be3e7db6f987" xsi:noNamespaceSchemaLocation="http://www.geogebra.org/apps/xsd/ggb.xsd" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <gui>
-        <window width="1344" height="647"/>
+        <window width="800" height="600"/>
         <perspectives>
             <perspective id="tmp">
                 <panes>
