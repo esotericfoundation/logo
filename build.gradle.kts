@@ -6,4 +6,6 @@ plugins {
 
 repositories {
     mavenCentral()
+
+    maven("https://repo.geogebra.net/releases")
 }
