@@ -6,7 +6,7 @@ import org.geogebra.desktop.gui.app.GeoGebraFrame
 import java.io.File
 
 fun main() {
-    val mainThread = Thread {
+    Thread {
         GeoGebra.main(emptyArray())
     }.start()
 
