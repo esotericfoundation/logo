@@ -9,3 +9,7 @@ repositories {
 
     maven("https://repo.geogebra.net/releases")
 }
+
+dependencies {
+    implementation("org.geogebra:common")
+}

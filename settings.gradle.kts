@@ -1,3 +1,7 @@
 rootProject.name = "logo"
 
-includeBuild("geogebra")
+includeBuild("geogebra") {
+    dependencySubstitution {
+        substitute(module("org.geogebra:common")).using(project(":common"))
+    }
+}
