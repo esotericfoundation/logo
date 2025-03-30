@@ -29,8 +29,8 @@
     </gui>
     <euclidianView>
         <viewNumber viewNo="1"/>
-        <size width="732" height="478"/>
-        <coordSystem xZero="205.2357993395034" yZero="418.12837333323483" scale="101.1831133665082" yscale="101.18311336650821"/>
+        <size width="432" height="431"/>
+        <coordSystem xZero="205.23579933950336" yZero="418.1283733332348" scale="101.18311336650818" yscale="101.1831133665082"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1" lockedAxesRatio="1.0"/>
         <bgColor r="255" g="255" b="255"/>
         <axesColor r="37" g="37" b="37"/>
