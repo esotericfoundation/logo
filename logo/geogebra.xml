@@ -39,9 +39,7 @@
         <axis id="0" show="false" label="" unitLabel="" tickStyle="1" showNumbers="true"/>
         <axis id="1" show="false" label="" unitLabel="" tickStyle="1" showNumbers="true"/>
     </euclidianView>
-    <spreadsheetView>
-        <dimensions rows="100" columns="26"/>
-    </spreadsheetView>
+    <spreadsheetView></spreadsheetView>
     <algebraView>
         <mode val="3"/>
     </algebraView>
