@@ -1,7 +1,0 @@
-[versions]
-
-# Plugins
-plugin-kotlin-jvm = "2.0.21"
-
-[plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin-jvm" }
