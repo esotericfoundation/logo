@@ -43,7 +43,7 @@
     <kernel>
         <continuous val="false"/>
         <usePathAndRegionParameters val="true"/>
-        <decimals val="13"/>
+        <decimals val="15"/>
         <angleUnit val="degree"/>
         <algebraStyle val="0" spreadsheet="0"/>
         <coordStyle val="0"/>
