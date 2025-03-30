@@ -35,4 +35,6 @@ fun main() {
         1.0,
         true
     )
+
+    desktopApp.exit()
 }
