@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pushd "$(dirname "$0")/.." >/dev/null
+
+pushd "geogebra" >/dev/null
+
+gradle desktop:installDist
+
+popd >/dev/null
+
+java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar ./esoteric-foundation-logo.ggb
+
+bash ./scripts/unzip.sh
+bash ./scripts/export.sh
+
+popd >/dev/null
