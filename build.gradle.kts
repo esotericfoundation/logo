@@ -12,4 +12,6 @@ repositories {
 
 dependencies {
     implementation("org.geogebra:common")
+    implementation("org.geogebra:common-jre")
+    implementation("org.geogebra:desktop")
 }
