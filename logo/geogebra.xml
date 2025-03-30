@@ -30,7 +30,7 @@
     <euclidianView>
         <viewNumber viewNo="1"/>
         <size width="800" height="464"/>
-        <coordSystem xZero="399.62081934280707" yZero="316.1434123928887" scale="145.2179542284559" yscale="145.2179542284559"/>
+        <coordSystem xZero="400.0" yZero="315.62063561712534" scale="145.4271923776092" yscale="145.4271923776092"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1" lockedAxesRatio="1.0"/>
         <bgColor r="255" g="255" b="255"/>
         <axesColor r="37" g="37" b="37"/>
