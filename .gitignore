@@ -33,3 +33,6 @@ gradle/wrapper/gradle-wrapper.jar
 
 # Kotlin output
 .kotlin/sessions/kotlin-compiler-[0-9]*.salive
+
+# Error logs
+*.hprof
