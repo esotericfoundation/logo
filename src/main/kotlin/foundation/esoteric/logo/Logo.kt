@@ -20,4 +20,8 @@ fun main() {
     val desktopApp = frame.application
 
     desktopApp.loadFile(logoFile, false)
+
+    val gui = desktopApp.guiManager
+
+    gui.showGraphicExport()
 }
