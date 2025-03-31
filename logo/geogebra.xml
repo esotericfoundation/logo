@@ -51,40 +51,24 @@
     <tableview min="0.0" max="0.0" step="0.0"/>
     <scripting blocked="false" disabled="false"/>
     <construction title="Esoteric Foundation Logo" author="Esoteric Foundation" date="">
-        <element type="numeric" label="L_{x}">
-            <value val="-1.0"/>
-            <slider min="-5" max="5" absoluteScreenLocation="true" width="200.0" fixed="false" horizontal="true" showAlgebra="true"/>
-            <lineStyle thickness="10" type="0" typeHidden="1"/>
-            <show object="false" label="true"/>
-            <layer val="0"/>
-            <labelMode val="1"/>
-            <animation speed="1" type="0" playing="false"/>
-        </element>
-        <expression label="L" exp="(L_{x}, 0)" type="point"/>
+        <expression label="L" exp="(-1, 0)" type="point"/>
         <element type="point" label="L">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="21" g="101" b="192" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <animation step="0.1" speed="1" type="1" playing="false"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="-1.0" y="0.0" z="1.0"/>
         </element>
-        <element type="numeric" label="R_{x}">
-            <value val="1.0"/>
-            <slider min="-5" max="5" absoluteScreenLocation="true" width="200.0" fixed="false" horizontal="true" showAlgebra="true"/>
-            <lineStyle thickness="10" type="0" typeHidden="1"/>
-            <show object="false" label="true"/>
-            <layer val="0"/>
-            <labelMode val="1"/>
-            <animation speed="1" type="0" playing="false"/>
-        </element>
-        <expression label="R" exp="(R_{x}, 0)" type="point"/>
+        <expression label="R" exp="(1, 0)" type="point"/>
         <element type="point" label="R">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="21" g="101" b="192" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <animation step="0.1" speed="1" type="1" playing="false"/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="1.0" y="0.0" z="1.0"/>
@@ -97,12 +81,23 @@
             <value val="2.0"/>
             <auxiliary val="true"/>
         </element>
-        <expression label="T" exp="((L_{x} + R_{x}) / 2, sqrt(LR^(2) - (LR / 2)^(2)))" type="point"/>
-        <element type="point" label="T">
-            <show object="false" label="true"/>
+        <expression label="M" exp="((x(L) + x(R)) / 2, LR / 2)" type="point"/>
+        <element type="point" label="M">
+            <show object="false" label="true" ev="4"/>
             <objColor r="21" g="101" b="192" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <pointSize val="5"/>
+            <pointStyle val="0"/>
+            <coords x="0.0" y="1.0" z="1.0"/>
+        </element>
+        <expression label="T" exp="(x(M), sqrt(LR^(2) - (LR / 2)^(2)))" type="point"/>
+        <element type="point" label="T">
+            <show object="false" label="false" ev="4"/>
+            <objColor r="21" g="101" b="192" alpha="0.0"/>
+            <layer val="0"/>
+            <labelMode val="0"/>
+            <caption val="The top point of the polygon."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.0" y="1.7320508075688772" z="1.0"/>
@@ -112,7 +107,7 @@
             <output a0="f"/>
         </command>
         <element type="segment" label="f">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -129,7 +124,7 @@
             <output a0="g"/>
         </command>
         <element type="segment" label="g">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -141,22 +136,12 @@
             <endStyle val="default"/>
             <coords x="1.7320508075688772" y="1.0" z="-1.7320508075688772"/>
         </element>
-        <expression label="M" exp="((L_{x} + R_{x}) / 2, LR / 2)" type="point"/>
-        <element type="point" label="M">
-            <show object="false" label="true"/>
-            <objColor r="21" g="101" b="192" alpha="0.0"/>
-            <layer val="0"/>
-            <labelMode val="0"/>
-            <pointSize val="5"/>
-            <pointStyle val="0"/>
-            <coords x="0.0" y="1.0" z="1.0"/>
-        </element>
         <command name="Segment">
             <input a0="L" a1="M"/>
             <output a0="h"/>
         </command>
         <element type="segment" label="h">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -173,7 +158,7 @@
             <output a0="i"/>
         </command>
         <element type="segment" label="i">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -185,10 +170,6 @@
             <endStyle val="default"/>
             <coords x="1.0" y="1.0" z="-1.0"/>
         </element>
-        <expression label="s" exp="LR"/>
-        <element type="numeric" label="s">
-            <value val="2.0"/>
-        </element>
         <command name="Distance">
             <input a0="L" a1="M"/>
             <output a0="LM"/>
@@ -197,51 +178,51 @@
             <value val="1.4142135623730951"/>
             <auxiliary val="true"/>
         </element>
-        <expression label="d" exp="LM"/>
-        <element type="numeric" label="d">
-            <value val="1.4142135623730951"/>
-        </element>
-        <expression label="s_{square}" exp="d / 4"/>
-        <element type="numeric" label="s_{square}">
+        <expression label="s_{S}" exp="LM / 4"/>
+        <element type="numeric" label="s_{S}">
             <value val="0.3535533905932738"/>
+            <caption val="The side length of the square."/>
         </element>
         <command name="TriangleCenter">
             <input a0="T" a1="R" a2="L" a3="1"/>
-            <output a0="K"/>
+            <output a0="O_S"/>
         </command>
-        <element type="point" label="K">
-            <show object="false" label="true"/>
+        <element type="point" label="O_S">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="1"/>
             <labelMode val="0"/>
+            <caption val="The center of the square S. This is also defined as the triangle center of the quadrilateral Q treated as an equilateral triangle."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.0" y="0.5773502691896258" z="1.0"/>
         </element>
         <command name="Point">
-            <input a0="K" a1="Vector[(0, sqrt(s_{square}^(2) / 2))]"/>
-            <output a0="T_{square}"/>
+            <input a0="O_S" a1="Vector[(0, sqrt(s_{S}^(2) / 2))]"/>
+            <output a0="T_{S}"/>
         </command>
-        <element type="point" label="T_{square}">
-            <show object="false" label="true"/>
+        <element type="point" label="T_{S}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelOffset x="4" y="-3"/>
             <labelMode val="0"/>
+            <caption val="The top vertex of the square."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.0" y="0.8273502691896258" z="1.0"/>
         </element>
-        <expression label="d_{square}" exp="sqrt(Distance[T_{square}, M]^(2) / 2)"/>
-        <element type="numeric" label="d_{square}">
+        <expression label="SQ" exp="sqrt(Distance[T_{S}, M]^(2) / 2)"/>
+        <element type="numeric" label="SQ">
             <value val="0.12208179542604757"/>
+            <caption val="The shortest distance from the square S to the polygon Q."/>
         </element>
         <command name="Point">
-            <input a0="M" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * d_{square})]"/>
-            <output a0="T_{1}"/>
+            <input a0="M" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * SQ)]"/>
+            <output a0="T_{3}"/>
         </command>
-        <element type="point" label="T_{1}">
-            <show object="false" label="true"/>
+        <element type="point" label="T_{3}">
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -258,45 +239,48 @@
             <auxiliary val="true"/>
         </element>
         <command name="Point">
-            <input a0="T_{square}" a1="Vector[(Vector[((-(sqrt(2) / 2)), (-(sqrt(2) / 2)))] * s_{square})]"/>
-            <output a0="L_{square}"/>
+            <input a0="T_{S}" a1="Vector[(Vector[((-(sqrt(2) / 2)), (-(sqrt(2) / 2)))] * s_{S})]"/>
+            <output a0="L_{S}"/>
         </command>
-        <element type="point" label="L_{square}">
-            <show object="false" label="true"/>
+        <element type="point" label="L_{S}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelOffset x="-11" y="-16"/>
             <labelMode val="0"/>
+            <caption val="The left vertex of the square S."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="-0.25000000000000006" y="0.5773502691896257" z="1.0"/>
         </element>
         <command name="Point">
-            <input a0="L_{square}" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * s_{square})]"/>
-            <output a0="B_{square}"/>
+            <input a0="L_{S}" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * s_{S})]"/>
+            <output a0="B_{S}"/>
         </command>
-        <element type="point" label="B_{square}">
-            <show object="false" label="true"/>
+        <element type="point" label="B_{S}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <caption val="The bottom vertex of the square."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.0" y="0.3273502691896257" z="1.0"/>
         </element>
         <command name="Polygon">
-            <input a0="L_{square}" a1="B_{square}" a2="4"/>
-            <output a0="poly1" a1="j" a2="k" a3="l" a4="m" a5="A" a6="B"/>
+            <input a0="L_{S}" a1="B_{S}" a2="4"/>
+            <output a0="S" a1="j" a2="k" a3="l" a4="m" a5="A" a6="B"/>
         </command>
-        <element type="polygon" label="poly1">
+        <element type="polygon" label="S">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1.0"/>
             <layer val="1"/>
             <labelMode val="0"/>
+            <caption val="The small square under the main polygon."/>
         </element>
         <element type="segment" label="j">
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -310,7 +294,7 @@
             <coords x="0.25000000000000006" y="0.25000000000000006" z="-0.08183756729740643"/>
         </element>
         <element type="segment" label="k">
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -324,7 +308,7 @@
             <coords x="-0.25000000000000006" y="0.24999999999999997" z="-0.0818375672974064"/>
         </element>
         <element type="segment" label="l">
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -338,7 +322,7 @@
             <coords x="-0.25" y="-0.24999999999999994" z="0.2068375672974064"/>
         </element>
         <element type="segment" label="m">
-            <show object="true" label="false"/>
+            <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -352,7 +336,7 @@
             <coords x="0.25" y="-0.25000000000000006" z="0.2068375672974065"/>
         </element>
         <element type="point" label="A">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -372,11 +356,11 @@
             <coords x="1.816867935239683E-17" y="0.8273502691896257" z="1.0"/>
         </element>
         <command name="Line">
-            <input a0="L_{square}" a1="T_{square}"/>
+            <input a0="L_{S}" a1="T_{S}"/>
             <output a0="L_{1}"/>
         </command>
         <element type="line" label="L_{1}">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -389,7 +373,7 @@
             <output a0="C"/>
         </command>
         <element type="point" label="C">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -398,24 +382,25 @@
             <coords x="0.2261751345948129" y="0.7912658773652744" z="0.6830127018922195"/>
         </element>
         <command name="Point">
-            <input a0="T_{square}" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * s_{square})]"/>
-            <output a0="R_{square}"/>
+            <input a0="T_{S}" a1="Vector[(Vector[(sqrt(2) / 2, (-(sqrt(2) / 2)))] * s_{S})]"/>
+            <output a0="R_{S}"/>
         </command>
-        <element type="point" label="R_{square}">
-            <show object="false" label="true"/>
+        <element type="point" label="R_{S}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <caption val="The right vertex of the square S."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.25000000000000006" y="0.5773502691896257" z="1.0"/>
         </element>
         <command name="Line">
-            <input a0="B_{square}" a1="R_{square}"/>
+            <input a0="B_{S}" a1="R_{S}"/>
             <output a0="L_{2}"/>
         </command>
         <element type="line" label="L_{2}">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -428,7 +413,7 @@
             <output a0="D"/>
         </command>
         <element type="point" label="D">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -437,34 +422,36 @@
             <coords x="0.351175134594813" y="0.5747595264191645" z="0.6830127018922194"/>
         </element>
         <command name="Point">
-            <input a0="D" a1="Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]"/>
-            <output a0="B_{righttriangle}"/>
+            <input a0="D" a1="Vector[((sqrt(2) / 2, sqrt(2) / 2) * SQ)]"/>
+            <output a0="B_{T_1}"/>
         </command>
-        <element type="point" label="B_{righttriangle}">
-            <show object="false" label="false"/>
+        <element type="point" label="B_{T_1}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <caption val="The bottom vertex of the triangle on the right side of the logo T1."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.600480947161671" y="0.9278312163512967" z="1.0"/>
         </element>
         <command name="Point">
-            <input a0="C" a1="Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]"/>
-            <output a0="L_{right triangle}"/>
+            <input a0="C" a1="Vector[((sqrt(2) / 2, sqrt(2) / 2) * SQ)]"/>
+            <output a0="L_{T_1}"/>
         </command>
-        <element type="point" label="L_{right triangle}">
-            <show object="false" label="false"/>
+        <element type="point" label="L_{T_1}">
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <caption val="The left vertex of the right triangle T1."/>
             <pointSize val="5"/>
             <pointStyle val="0"/>
             <coords x="0.4174682452694516" y="1.2448185144590775" z="1.0"/>
         </element>
         <expression label="p" exp="y = 0" type="line"/>
         <element type="line" label="p">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -474,7 +461,7 @@
             <coords x="0.0" y="1.0" z="0.0"/>
         </element>
         <command name="Line">
-            <input a0="Point[C, Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]]" a1="p"/>
+            <input a0="Point[C, Vector[((sqrt(2) / 2, sqrt(2) / 2) * SQ)]]" a1="p"/>
             <output a0="n"/>
         </command>
         <element type="line" label="n">
@@ -500,18 +487,19 @@
             <coords x="0.229367061317363" y="0.31120462861476944" z="0.25000000000000006"/>
         </element>
         <command name="Polygon">
-            <input a0="L_{right triangle}" a1="E" a2="B_{righttriangle}"/>
-            <output a0="t1" a1="b_{righttriangle}" a2="l_{right triangle}" a3="e"/>
+            <input a0="L_{T_1}" a1="E" a2="B_{T_1}"/>
+            <output a0="T_1" a1="b_{righttriangle}" a2="l_{right triangle}" a3="e"/>
         </command>
-        <element type="polygon" label="t1">
+        <element type="polygon" label="T_1">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1.0"/>
             <layer val="1"/>
             <labelMode val="0"/>
+            <caption val="The small triangle on the right of the logo."/>
         </element>
         <element type="segment" label="b_{righttriangle}">
-            <show object="false" label="true"/>
+            <show object="true" label="true" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelOffset x="10" y="50"/>
@@ -526,7 +514,7 @@
             <coords x="0.0" y="0.5000000000000002" z="-0.6224092572295391"/>
         </element>
         <element type="segment" label="l_{right triangle}">
-            <show object="false" label="true"/>
+            <show object="true" label="true" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelOffset x="32" y="32"/>
@@ -541,7 +529,7 @@
             <coords x="0.3169872981077808" y="-0.3169872981077808" z="0.1037658773652741"/>
         </element>
         <element type="segment" label="e">
-            <show object="false" label="true"/>
+            <show object="true" label="true" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -555,11 +543,11 @@
             <coords x="-0.3169872981077808" y="-0.1830127018922194" z="0.36014973081037444"/>
         </element>
         <command name="Line">
-            <input a0="B_{square}" a1="L_{square}"/>
+            <input a0="B_{S}" a1="L_{S}"/>
             <output a0="L_{3}"/>
         </command>
         <element type="line" label="L_{3}">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -568,11 +556,11 @@
             <coords x="-0.25000000000000006" y="-0.25000000000000006" z="0.08183756729740643"/>
         </element>
         <command name="Line">
-            <input a0="R_{square}" a1="T_{square}"/>
+            <input a0="R_{S}" a1="T_{S}"/>
             <output a0="L_{4}"/>
         </command>
         <element type="line" label="L_{4}">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -585,7 +573,7 @@
             <output a0="F"/>
         </command>
         <element type="point" label="F">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -598,7 +586,7 @@
             <output a0="G"/>
         </command>
         <element type="point" label="G">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -607,11 +595,11 @@
             <coords x="-0.2261751345948129" y="0.7912658773652744" z="0.6830127018922195"/>
         </element>
         <command name="Point">
-            <input a0="G" a1="Vector[(((-(sqrt(2) / 2)), sqrt(2) / 2) * d_{square})]"/>
+            <input a0="G" a1="Vector[(((-(sqrt(2) / 2)), sqrt(2) / 2) * SQ)]"/>
             <output a0="H"/>
         </command>
         <element type="point" label="H">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -620,11 +608,11 @@
             <coords x="-0.4174682452694516" y="1.2448185144590775" z="1.0"/>
         </element>
         <command name="Point">
-            <input a0="F" a1="Vector[(((-(sqrt(2) / 2)), sqrt(2) / 2) * d_{square})]"/>
+            <input a0="F" a1="Vector[(((-(sqrt(2) / 2)), sqrt(2) / 2) * SQ)]"/>
             <output a0="I"/>
         </command>
         <element type="point" label="I">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -633,11 +621,11 @@
             <coords x="-0.600480947161671" y="0.9278312163512967" z="1.0"/>
         </element>
         <command name="Line">
-            <input a0="Point[G, Vector[((sqrt(2) / 2, sqrt(2) / 2) * d_{square})]]" a1="p"/>
+            <input a0="Point[G, Vector[((sqrt(2) / 2, sqrt(2) / 2) * SQ)]]" a1="p"/>
             <output a0="q"/>
         </command>
         <element type="line" label="q">
-            <show object="false" label="true"/>
+            <show object="false" label="true" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -650,7 +638,7 @@
             <output a0="J"/>
         </command>
         <element type="point" label="J">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="97" g="97" b="97" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -660,17 +648,18 @@
         </element>
         <command name="Polygon">
             <input a0="J" a1="I" a2="H"/>
-            <output a0="t2" a1="h_1" a2="j_1" a3="i_1"/>
+            <output a0="T_2" a1="h_1" a2="j_1" a3="i_1"/>
         </command>
-        <element type="polygon" label="t2">
+        <element type="polygon" label="T_2">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1.0"/>
             <layer val="1"/>
             <labelMode val="0"/>
+            <caption val="The small triangle on the left of the logo."/>
         </element>
         <element type="segment" label="h_1">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -684,7 +673,7 @@
             <coords x="0.3169872981077808" y="0.3169872981077808" z="-0.1037658773652741"/>
         </element>
         <element type="segment" label="j_1">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -698,7 +687,7 @@
             <coords x="-0.3169872981077808" y="0.1830127018922194" z="-0.36014973081037444"/>
         </element>
         <element type="segment" label="i_1">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -713,17 +702,18 @@
         </element>
         <command name="Polygon">
             <input a0="L" a1="T" a2="R" a3="M"/>
-            <output a0="q1" a1="l_1" a2="t" a3="r" a4="m_1"/>
+            <output a0="Q" a1="l_1" a2="t" a3="r" a4="m_1"/>
         </command>
-        <element type="polygon" label="q1">
+        <element type="polygon" label="Q">
             <lineStyle thickness="0" type="0" typeHidden="1" opacity="204"/>
             <show object="true" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="1.0"/>
             <layer val="1"/>
             <labelMode val="0"/>
+            <caption val="The main polygon, a quadrilateral that is the central part of the logo - also an equilateral triangle with a right-angled triangle cut out at the bottom."/>
         </element>
         <element type="segment" label="l_1">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -737,7 +727,7 @@
             <coords x="-1.7320508075688772" y="1.0" z="-1.7320508075688772"/>
         </element>
         <element type="segment" label="t">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -751,7 +741,7 @@
             <coords x="1.7320508075688772" y="1.0" z="-1.7320508075688772"/>
         </element>
         <element type="segment" label="r">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -765,7 +755,7 @@
             <coords x="-1.0" y="-1.0" z="1.0"/>
         </element>
         <element type="segment" label="m_1">
-            <show object="false" label="false"/>
+            <show object="false" label="false" ev="4"/>
             <objColor r="255" g="255" b="255" alpha="0.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
@@ -779,14 +769,15 @@
             <coords x="1.0" y="-1.0" z="1.0"/>
         </element>
         <command name="Circle">
-            <input a0="K" a1="(1.0625 * Distance[M, R])"/>
-            <output a0="c_1"/>
+            <input a0="O_S" a1="(1.0625 * Distance[M, R])"/>
+            <output a0="c"/>
         </command>
-        <element type="conic" label="c_1">
+        <element type="conic" label="c">
             <show object="true" label="false" ev="4"/>
             <objColor r="0" g="0" b="0" alpha="1.0"/>
             <layer val="0"/>
             <labelMode val="0"/>
+            <caption val="The black circle background of the logo."/>
             <lineStyle thickness="1" type="0" typeHidden="1" opacity="178"/>
             <eqnStyle style="specific"/>
             <eigenvectors x0="1.0" y0="0.0" z0="1.0" x1="-0.0" y1="1.0" z1="1.0"/>
