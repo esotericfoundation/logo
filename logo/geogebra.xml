@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <geogebra format="5.0" version="5.2.871.0" app="classic" platform="d" id="4323beda-460b-469e-b4c1-be3e7db6f987" xsi:noNamespaceSchemaLocation="http://www.geogebra.org/apps/xsd/ggb.xsd" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <gui>
-        <window width="800" height="600"/>
+        <window width="800" height="800"/>
         <perspectives>
             <perspective id="tmp">
                 <panes>
@@ -29,8 +29,8 @@
     </gui>
     <euclidianView>
         <viewNumber viewNo="1"/>
-        <size width="800" height="464"/>
-        <coordSystem xZero="400.0" yZero="315.62063561712534" scale="145.4271923776092" yscale="145.4271923776092"/>
+        <size width="800" height="664"/>
+        <coordSystem xZero="400.0" yZero="451.5918455452985" scale="207.98581833964954" yscale="207.98581833964954"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1" lockedAxesRatio="1.0"/>
         <bgColor r="255" g="255" b="255"/>
         <axesColor r="37" g="37" b="37"/>
