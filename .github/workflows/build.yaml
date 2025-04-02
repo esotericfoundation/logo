@@ -12,6 +12,12 @@ jobs:
         java: [ 11 ]
       fail-fast: true
     steps:
+      - name: Install dependencies
+        run: sudo apt-get install -y xvfb
+      - name: Start XVFB
+        run: Xvfb :99 &
+      - name: Set DISPLAY environment variable
+        run: echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Checkout project
         uses: actions/checkout@v4
         with:
