@@ -12,7 +12,7 @@ popd >/dev/null
 
 bash ./scripts/zip.sh
 
-java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar ./esoteric-foundation-logo.ggb
+java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar --showSplash=false ./esoteric-foundation-logo.ggb
 
 bash ./scripts/unzip.sh
 bash ./scripts/export.sh
