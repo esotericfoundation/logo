@@ -14,8 +14,13 @@ jobs:
     steps:
       - name: Install XVNC
         run: sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server
+      - name: Set up VNC password
+        run: |
+          mkdir -p ~/.vnc
+          echo password | vncpasswd -f > ~/.vnc/passwd
+          chmod 600 ~/.vnc/passwd
       - name: Start XVNC
-        run: vncserver :99 -geometry 1920x1080 -depth 24
+        run: vncserver :99 -geometry 1920x1080 -depth 24 -SecurityTypes None
       - name: Set DISPLAY environment variable
         run: echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Checkout project
