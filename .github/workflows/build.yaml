@@ -12,37 +12,10 @@ jobs:
         java: [ 11 ]
       fail-fast: true
     steps:
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y xserver-xorg-core xserver-xorg-video-dummy x11-utils
-      - name: Configure Xorg dummy display
-        run: |
-          sudo bash -c 'cat > /etc/X11/xorg.conf <<EOF
-          Section "Device"
-              Identifier "dummy_device"
-              Driver "dummy"
-          EndSection
-          Section "Monitor"
-              Identifier "dummy_monitor"
-              HorizSync 28.0-80.0
-              VertRefresh 48.0-75.0
-          EndSection
-          Section "Screen"
-              Identifier "dummy_screen"
-              Device "dummy_device"
-              Monitor "dummy_monitor"
-              DefaultDepth 24
-              SubSection "Display"
-                  Depth 24
-                  Modes "1920x1080"
-              EndSubSection
-          EndSection
-          Section "ServerLayout"
-              Identifier "dummy_layout"
-              Screen "dummy_screen"
-          EndSection
-          EOF'
-      - name: Start Xorg
-        run: Xorg -noreset +extension GLX +extension RANDR +extension RENDER -logfile /tmp/xorg.log -config /etc/X11/xorg.conf :99 &
+      - name: Install XVNC
+        run: sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server
+      - name: Start XVNC
+        run: vncserver :99 -geometry 1920x1080 -depth 24
       - name: Set DISPLAY environment variable
         run: echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Checkout project
