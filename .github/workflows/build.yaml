@@ -13,14 +13,18 @@ jobs:
       fail-fast: true
     steps:
       - name: Install XVNC
-        run: sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server
+        run: sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server x11-xserver-utils
       - name: Set up VNC password
         run: |
           mkdir -p ~/.vnc
           echo password | vncpasswd -f > ~/.vnc/passwd
           chmod 600 ~/.vnc/passwd
-      - name: Start XVNC
-        run: vncserver :99 -geometry 1920x1080 -depth 24 -SecurityTypes None
+      - name: Create .Xauthority file
+        run: touch ~/.Xauthority
+      - name: Start Xvnc
+        run: |
+          vncserver :99 -geometry 1920x1080 -depth 24 -SecurityTypes None -xstartup /usr/bin/xterm &
+          sleep 5
       - name: Set DISPLAY environment variable
         run: echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Checkout project
