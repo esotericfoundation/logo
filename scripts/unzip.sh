@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
+
 original="$(pwd)"
 
-cd "$(dirname "$0")" || exit 1
+cd "$(dirname "$0")"
 
 cd ../
 
@@ -30,4 +32,4 @@ cd ../
 
 node ./scripts/js/format.js
 
-cd "$original" || exit 1
+cd "$original"
