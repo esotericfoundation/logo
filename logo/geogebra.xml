@@ -12,7 +12,7 @@
                     <view id="4" toolbar="0 || 2020 , 2021 , 2022 || 2001 , 2003 , 2002 , 2004 , 2005 || 2040 , 2041 , 2042 , 2044 , 2043" visible="false" inframe="false" stylebar="false" location="1,1" size="300" window="100,100,600,400"/>
                     <view id="8" toolbar="1001 | 1002 | 1003  || 1005 | 1004 || 1006 | 1007 | 1010 || 1008 | 1009 || 6" visible="false" inframe="false" stylebar="false" location="1,3" size="300" window="100,100,600,400"/>
                     <view id="4097" visible="false" inframe="false" stylebar="true" location="1,1" size="390" window="100,100,700,550"/>
-                    <view id="1" visible="true" inframe="true" stylebar="true" location="1" size="800" window="100,100,600,400"/>
+                    <view id="1" visible="true" inframe="true" stylebar="true" location="1" size="800" window="1620,880,600,400"/>
                     <view id="2" visible="false" inframe="false" stylebar="false" location="3" size="358" tab="ALGEBRA" window="100,100,600,400"/>
                     <view id="16" visible="false" inframe="false" stylebar="false" location="1" size="300" window="50,50,500,500"/>
                     <view id="32" visible="false" inframe="false" stylebar="true" location="1" size="300" window="50,50,500,500"/>
@@ -29,8 +29,8 @@
     </gui>
     <euclidianView>
         <viewNumber viewNo="1"/>
-        <size width="800" height="664"/>
-        <coordSystem xZero="400.0" yZero="451.5918455452985" scale="207.98581833964954" yscale="207.98581833964954"/>
+        <size width="600" height="346"/>
+        <coordSystem xZero="300.0" yZero="235.5196030192791" scale="108.27705026258424" yscale="108.27705026258424"/>
         <evSettings axes="false" grid="false" gridIsBold="false" pointCapturing="3" rightAngleStyle="1" checkboxSize="26" gridType="-1" lockedAxesRatio="1.0"/>
         <bgColor r="255" g="255" b="255"/>
         <axesColor r="37" g="37" b="37"/>
