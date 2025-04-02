@@ -12,8 +12,26 @@ jobs:
         java: [ 11 ]
       fail-fast: true
     steps:
+      - name: Install XVNC
+        run: sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server x11-xserver-utils
+      - name: Set up VNC password
+        run: |
+          mkdir -p ~/.vnc
+          echo password | vncpasswd -f > ~/.vnc/passwd
+          chmod 600 ~/.vnc/passwd
+      - name: Create .Xauthority file
+        run: touch ~/.Xauthority
+      - name: Start Xvnc
+        run: |
+          vncserver :99 -geometry 1920x1080 -depth 24 -SecurityTypes None -xstartup /usr/bin/xterm &
+          sleep 5
+      - name: Set DISPLAY environment variable
+        run: echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Checkout project
         uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          token: ${{ secrets.PAT }}
       - name: JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:
@@ -21,5 +39,7 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+      - name: Install Inkscape
+        run: sudo apt-get update && sudo apt-get install -y inkscape
       - name: Export logo
         run: ./scripts/export.sh

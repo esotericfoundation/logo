@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
+
 original="$(pwd)"
 
-cd "$(dirname "$0")" || exit 1
+cd "$(dirname "$0")"
 
 cd ../logo
 
@@ -10,4 +12,4 @@ zip esoteric-foundation-logo.ggb *
 
 mv *.ggb ../
 
-cd "$original" || exit 1
+cd "$original"
