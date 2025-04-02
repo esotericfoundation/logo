@@ -10,7 +10,7 @@ gradle desktop:installDist
 
 popd >/dev/null
 
-java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar --showSplash=false ./esoteric-foundation-logo.ggb --export=./esoteric-foundation-logo.svg
+timeout 30s java -jar ./geogebra/desktop/build/install/desktop/lib/desktop.jar --showSplash=false ./esoteric-foundation-logo.ggb --export=./esoteric-foundation-logo.svg || echo "Timed out while exporting with GeoGebra"
 
 inkscape ./esoteric-foundation-logo.svg --export-area-drawing --export-plain-svg -o ./esoteric-foundation-logo.svg
 inkscape ./esoteric-foundation-logo.svg -o ./esoteric-foundation-logo.png
