@@ -1,3 +1,4 @@
 [submodule "geogebra"]
 	path = geogebra
 	url = git@github.com:geogebra/geogebra.git
+	branch = main
