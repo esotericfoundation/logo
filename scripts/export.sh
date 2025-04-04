@@ -4,6 +4,8 @@ set -e
 
 pushd "$(dirname "$0")/.." >/dev/null
 
+bash ./scripts/zip.sh
+
 pushd "geogebra" >/dev/null
 
 gradle desktop:installDist
