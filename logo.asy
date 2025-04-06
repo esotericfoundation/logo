@@ -37,7 +37,15 @@ write(F);
 write(G);
 write(H);
 
-pair center = (E + G) / 2;
+pair center = (0, 0);
+
+real centerToD = arclength(center--D);
+real diagonal = centerToD * 1/2;
+
+pair I = center + (0, diagonal);
+pair J = center + (diagonal, 0);
+pair K = center + (0, -diagonal);
+pair L = center + (-diagonal, 0);
 
 real centerToA = arclength(center--A);
 real centerToB = arclength(center--B);
@@ -47,4 +55,4 @@ write(centerToA);
 write(centerToB);
 write(centerToC);
 
-filldraw(square);
+filldraw(I--J--K--L--cycle);
