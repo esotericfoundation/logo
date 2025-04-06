@@ -14,7 +14,7 @@ write(A);
 write(B);
 write(C);
 
-pair D = (0, 0.5);
+pair D = (0, C.y + B.x - C.x);
 
 write(D);
 
