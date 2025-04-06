@@ -19,3 +19,32 @@ pair D = (0, C.y + B.x - C.x);
 write(D);
 
 filldraw(A--B--C--D--cycle);
+
+path unitSquare = polygon(4);
+path square = scale(0.125)*(rotate(45)*unitSquare);
+
+pair E = point(square, 0);
+pair F = point(square, 1);
+pair G = point(square, 2);
+pair H = point(square, 3);
+
+write("Small square:");
+write(square);
+
+write("Points:");
+write(E);
+write(F);
+write(G);
+write(H);
+
+pair center = (E + G) / 2;
+
+real centerToA = arclength(center--A);
+real centerToB = arclength(center--B);
+real centerToC = arclength(center--C);
+
+write(centerToA);
+write(centerToB);
+write(centerToC);
+
+filldraw(square);
