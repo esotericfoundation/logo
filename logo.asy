@@ -1,3 +1,4 @@
 size(512, 512);
 
-filldraw(polygon(3));
+path triangle = polygon(3);
+filldraw(triangle);
