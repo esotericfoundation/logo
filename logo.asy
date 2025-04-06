@@ -1,5 +1,7 @@
 size(512, 512);
 
+import geometry;
+
 path triangle = polygon(3);
 
 pair A = point(triangle, 0);
@@ -13,6 +15,10 @@ write("Points:");
 write(A);
 write(B);
 write(C);
+
+// (label("A", A));
+// (label("B", B));
+// (label("C", C));
 
 pair D = (0, C.y + B.x - C.x);
 
@@ -42,9 +48,9 @@ pair center = (0, 0);
 real centerToD = arclength(center--D);
 real diagonal = centerToD * 1/2;
 
-pair I = center + (0, diagonal);
+pair K = center + (0, diagonal);
 pair J = center + (diagonal, 0);
-pair K = center + (0, -diagonal);
+pair I = center + (0, -diagonal);
 pair L = center + (-diagonal, 0);
 
 real centerToA = arclength(center--A);
@@ -56,3 +62,17 @@ write(centerToB);
 write(centerToC);
 
 filldraw(I--J--K--L--cycle);
+
+// label("I", I);
+// label("J", J);
+// label("K", K);
+// label("L", L);
+
+line right = line(I, false, J, true);
+line left = line(I, false, L, true);
+
+var rightIntersect = intersectionpoint(right, line(A, false, B, false));
+var leftIntersect = intersectionpoint(left, line(C, false, B, false));
+
+write(coordinates(rightIntersect));
+write(coordinates(leftIntersect));
