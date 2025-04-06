@@ -14,4 +14,8 @@ write(A);
 write(B);
 write(C);
 
-filldraw(triangle);
+pair D = (0, 0.5);
+
+write(D);
+
+filldraw(A--B--C--D--cycle);
