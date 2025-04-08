@@ -22,10 +22,10 @@ real diagonal = centerToD * 1/2;
 
 real centerToPolygon = distance(center, line(rightAngleTriangleTop, false, equilateralTriangleRight, false));
 
-pair K = center + (0, diagonal);
-pair J = center + (diagonal, 0);
-pair I = center + (0, -diagonal);
-pair L = center + (-diagonal, 0);
+pair smallSquareTop = center + (0, diagonal);
+pair smallSquareRight = center + (diagonal, 0);
+pair smallSquareBottom = center - (0, diagonal);
+pair smallSquareLeft = center - (diagonal, 0);
 
 real centerToA = arclength(center--equilateralTriangleRight);
 real centerToB = arclength(center--equilateralTriangleTop);
@@ -35,27 +35,27 @@ write(centerToA);
 write(centerToB);
 write(centerToC);
 
-filldraw(I--J--K--L--cycle);
+filldraw(smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle);
 
 // label("I", I);
 // label("J", J);
 // label("K", K);
 // label("L", L);
 
-line right = line(I, false, J, true);
-line left = line(I, false, L, true);
+line smallSquareBottomRightSide = line(smallSquareBottom, false, smallSquareRight, true);
+line smallSquareBottomLeftSide = line(smallSquareBottom, false, smallSquareLeft, true);
 
-line triangleRight = line(equilateralTriangleRight, false, equilateralTriangleTop, false);
-line triangleLeft = line(equilateralTriangleLeft, false, equilateralTriangleTop, false);
+line equilateralTriangleRightSide = line(equilateralTriangleRight, false, equilateralTriangleTop, false);
+line equilateralTriangleLeftSide = line(equilateralTriangleLeft, false, equilateralTriangleTop, false);
 
-var rightIntersect = intersectionpoint(right, triangleRight);
-var leftIntersect = intersectionpoint(left, triangleLeft);
+var rightIntersect = intersectionpoint(smallSquareBottomRightSide, equilateralTriangleRightSide);
+var leftIntersect = intersectionpoint(smallSquareBottomLeftSide, equilateralTriangleLeftSide);
 
 write(coordinates(rightIntersect));
 write(coordinates(leftIntersect));
 
-vector rightDistance = unit(triangleRight.v) * centerToPolygon;
-vector leftDistance = unit(triangleLeft.v) * centerToPolygon;
+vector rightDistance = unit(equilateralTriangleRightSide.v) * centerToPolygon;
+vector leftDistance = unit(equilateralTriangleLeftSide.v) * centerToPolygon;
 
 write(x=rightDistance);
 write(x=leftDistance);
@@ -63,5 +63,5 @@ write(x=leftDistance);
 point pointOnRightLine = equilateralTriangleTop + rightDistance;
 point pointOnLeftLine = equilateralTriangleTop + leftDistance;
 
-line rightLine = parallel(pointOnRightLine, triangleRight);
-line leftLine = parallel(pointOnLeftLine, triangleLeft);
+line rightLine = parallel(pointOnRightLine, equilateralTriangleRightSide);
+line leftLine = parallel(pointOnLeftLine, equilateralTriangleLeftSide);
