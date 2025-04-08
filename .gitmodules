@@ -1,0 +1,3 @@
+[submodule "asymptote"]
+	path = asymptote
+	url = git@github.com:vectorgraphics/asymptote.git
