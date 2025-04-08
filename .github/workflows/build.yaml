@@ -20,7 +20,9 @@ jobs:
             pyqt5-dev-tools\
             \
             texlive-latex-base\
-            texlive-latex-extra
+            texlive-latex-extra\
+            \
+            ghostscript
       - name: Build and install Asymptote
         run: |
           cd asymptote
