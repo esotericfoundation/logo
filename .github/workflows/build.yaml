@@ -1,0 +1,24 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          token: ${{ secrets.PAT }}
+      - name: Build and install Asymptote
+        run: |
+          cd asymptote
+          ./autogen.sh
+          ./configure --prefix=$HOME/asymptote
+          make all
+          make install
+      - name: Build logo
+        run: asy logo
