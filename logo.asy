@@ -2,32 +2,20 @@ import geometry;
 
 size(512, 512);
 
-path triangle = polygon(3);
+// This is the equilateral triangle that serves as a base for the logo.
+// A right-angle triangle is cut out from the bottom of this triangle, forming the main shape of the logo.
+path equilateralTriangle = polygon(3);
 
-pair A = point(triangle, 0);
-pair B = point(triangle, 1);
-pair C = point(triangle, 2);
+point equilateralTriangleRight = point(equilateralTriangle, 0);
+point equilateralTriangleTop = point(equilateralTriangle, 1);
+point equilateralTriangleLeft = point(equilateralTriangle, 2);
 
-write("Equilateral triangle:");
-write(triangle);
+pair rightAngleTriangleTop = (0, equilateralTriangleLeft.y + equilateralTriangleRight.x);
 
-write("Points:");
-write(A);
-write(B);
-write(C);
-
-// (label("A", A));
-// (label("B", B));
-// (label("C", C));
-
-pair D = (0, C.y + B.x - C.x);
-
-write(D);
-
-filldraw(A--B--C--D--cycle);
+filldraw(equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightAngleTriangleTop--cycle);
 
 path unitSquare = polygon(4);
-path square = scale(0.125)*(rotate(45)*unitSquare);
+path square = rotate(45)*unitSquare;
 
 pair E = point(square, 0);
 pair F = point(square, 1);
@@ -45,19 +33,19 @@ write(H);
 
 pair center = (0, 0);
 
-real centerToD = arclength(center--D);
+real centerToD = arclength(center--rightAngleTriangleTop);
 real diagonal = centerToD * 1/2;
 
-real centerToPolygon = distance(center, line(D, false, A, false));
+real centerToPolygon = distance(center, line(rightAngleTriangleTop, false, equilateralTriangleRight, false));
 
 pair K = center + (0, diagonal);
 pair J = center + (diagonal, 0);
 pair I = center + (0, -diagonal);
 pair L = center + (-diagonal, 0);
 
-real centerToA = arclength(center--A);
-real centerToB = arclength(center--B);
-real centerToC = arclength(center--C);
+real centerToA = arclength(center--equilateralTriangleRight);
+real centerToB = arclength(center--equilateralTriangleTop);
+real centerToC = arclength(center--equilateralTriangleLeft);
 
 write(centerToA);
 write(centerToB);
@@ -73,8 +61,8 @@ filldraw(I--J--K--L--cycle);
 line right = line(I, false, J, true);
 line left = line(I, false, L, true);
 
-line triangleRight = line(A, false, B, false);
-line triangleLeft = line(C, false, B, false);
+line triangleRight = line(equilateralTriangleRight, false, equilateralTriangleTop, false);
+line triangleLeft = line(equilateralTriangleLeft, false, equilateralTriangleTop, false);
 
 var rightIntersect = intersectionpoint(right, triangleRight);
 var leftIntersect = intersectionpoint(left, triangleLeft);
@@ -88,8 +76,8 @@ vector leftDistance = unit(triangleLeft.v) * centerToPolygon;
 write(x=rightDistance);
 write(x=leftDistance);
 
-point pointOnRightLine = B + rightDistance;
-point pointOnLeftLine = B + leftDistance;
+point pointOnRightLine = equilateralTriangleTop + rightDistance;
+point pointOnLeftLine = equilateralTriangleTop + leftDistance;
 
 line rightLine = parallel(pointOnRightLine, triangleRight);
 line leftLine = parallel(pointOnLeftLine, triangleLeft);
