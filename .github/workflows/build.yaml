@@ -13,6 +13,8 @@ jobs:
         with:
           submodules: 'recursive'
           token: ${{ secrets.PAT }}
+      - name: Install build dependencies
+        run: sudo apt install python3-pyqt5
       - name: Build and install Asymptote
         run: |
           cd asymptote
