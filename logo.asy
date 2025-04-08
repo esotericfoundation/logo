@@ -71,8 +71,14 @@ filldraw(I--J--K--L--cycle);
 line right = line(I, false, J, true);
 line left = line(I, false, L, true);
 
-var rightIntersect = intersectionpoint(right, line(A, false, B, false));
-var leftIntersect = intersectionpoint(left, line(C, false, B, false));
+line triangleRight = line(A, false, B, false);
+line triangleLeft = line(C, false, B, false);
+
+var rightIntersect = intersectionpoint(right, triangleRight);
+var leftIntersect = intersectionpoint(left, triangleLeft);
 
 write(coordinates(rightIntersect));
 write(coordinates(leftIntersect));
+
+write(x=unit(triangleLeft.v));
+write(x=unit(triangleRight.v));
