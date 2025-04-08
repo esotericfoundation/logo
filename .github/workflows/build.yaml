@@ -23,13 +23,12 @@ jobs:
             texlive-latex-extra\
             \
             ghostscript
-      - name: Build and install Asymptote, build logo
+      - name: Build and install Asymptote
         run: |
           cd asymptote
           ./autogen.sh
-          ./configure --prefix=$HOME/asymptote
+          ./configure
           make all
-          make install
-          cd ..
-
-          asy logo
+          sudo make install
+      - name: Build logo
+        run: asy logo
