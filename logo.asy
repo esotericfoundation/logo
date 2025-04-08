@@ -1,6 +1,6 @@
-size(512, 512);
-
 import geometry;
+
+size(512, 512);
 
 path triangle = polygon(3);
 
