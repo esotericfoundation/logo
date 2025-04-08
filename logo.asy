@@ -31,28 +31,44 @@ path mainPolygon = equilateralTriangleRight--equilateralTriangleTop--equilateral
 real centerToD = arclength(center--rightTriangleTop);
 real diagonal = centerToD * 1/2;
 
-real centerToPolygon = distance(center, line(rightTriangleTop, false, equilateralTriangleRight, false));
-
 point smallSquareTop = center + (0, diagonal);
 point smallSquareRight = center + (diagonal, 0);
 point smallSquareBottom = center - (0, diagonal);
 point smallSquareLeft = center - (diagonal, 0);
 
+real smallSquareTopToPolygon = distance(smallSquareTop, line(rightTriangleTop, false, equilateralTriangleRight, false));
+
 path smallSquare = smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle;
 
 line smallSquareBottomRight = line(smallSquareBottom, false, smallSquareRight, true);
 line smallSquareBottomLeft = line(smallSquareBottom, false, smallSquareLeft, true);
+line smallSquareTopLeft = line(smallSquareLeft, false, smallSquareTop, true);
+line smallSquareTopRight = line(smallSquareRight, false, smallSquareTop, true);
 
 // SIDE TRIANGLES
 
-vector rightDistance = unit(equilateralTriangleRightSide.v) * centerToPolygon;
-vector leftDistance = unit(equilateralTriangleLeftSide.v) * centerToPolygon;
+vector rightDistance = unit(-equilateralTriangleRightSide.v) * smallSquareTopToPolygon;
+vector leftDistance = unit(equilateralTriangleLeftSide.v) * smallSquareTopToPolygon;
 
 point pointOnRightLine = equilateralTriangleTop + rightDistance;
 point pointOnLeftLine = equilateralTriangleTop + leftDistance;
 
 line rightLine = parallel(pointOnRightLine, equilateralTriangleRightSide);
 line leftLine = parallel(pointOnLeftLine, equilateralTriangleLeftSide);
+
+point rightSideTriangleBottom = intersectionpoint(smallSquareBottomRight, rightLine);
+point rightSideTriangleLeft = intersectionpoint(smallSquareTopLeft, rightLine);
+
+point leftSideTriangleBottom = intersectionpoint(smallSquareBottomLeft, leftLine);
+point leftSideTriangleRight = intersectionpoint(smallSquareTopRight, leftLine);
+
+line sideTrianglesTop = line(leftSideTriangleRight, rightSideTriangleLeft);
+
+point rightSideTriangleRight = intersectionpoint(sideTrianglesTop, smallSquareBottomRight);
+point leftSideTriangleLeft = intersectionpoint(sideTrianglesTop, smallSquareBottomLeft);
+
+path rightSideTriangle = rightSideTriangleLeft--rightSideTriangleRight--rightSideTriangleBottom--cycle;
+path leftSideTriangle = leftSideTriangleRight--leftSideTriangleLeft--leftSideTriangleBottom--cycle;
 
 // ASSERTIONS
 
@@ -66,3 +82,6 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 filldraw(mainPolygon);
 filldraw(smallSquare);
+
+filldraw(rightSideTriangle);
+filldraw(leftSideTriangle);
