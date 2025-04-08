@@ -21,17 +21,17 @@ point equilateralTriangleLeft = point(equilateralTriangle, 2);
 line equilateralTriangleRightSide = line(equilateralTriangleRight, false, equilateralTriangleTop, false);
 line equilateralTriangleLeftSide = line(equilateralTriangleLeft, false, equilateralTriangleTop, false);
 
-real rightAngleTriangleHeight = equilateralTriangleLeft.y + equilateralTriangleRight.x;
-point rightAngleTriangleTop = (0, rightAngleTriangleHeight);
+real rightTriangleHeight = equilateralTriangleLeft.y + equilateralTriangleRight.x;
+point rightTriangleTop = (0, rightTriangleHeight);
 
-path mainPolygon = equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightAngleTriangleTop--cycle;
+path mainPolygon = equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightTriangleTop--cycle;
 
 // SMALL SQUARE
 
-real centerToD = arclength(center--rightAngleTriangleTop);
+real centerToD = arclength(center--rightTriangleTop);
 real diagonal = centerToD * 1/2;
 
-real centerToPolygon = distance(center, line(rightAngleTriangleTop, false, equilateralTriangleRight, false));
+real centerToPolygon = distance(center, line(rightTriangleTop, false, equilateralTriangleRight, false));
 
 point smallSquareTop = center + (0, diagonal);
 point smallSquareRight = center + (diagonal, 0);
