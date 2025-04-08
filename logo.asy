@@ -48,6 +48,8 @@ pair center = (0, 0);
 real centerToD = arclength(center--D);
 real diagonal = centerToD * 1/2;
 
+real centerToPolygon = distance(center, line(D, false, A, false));
+
 pair K = center + (0, diagonal);
 pair J = center + (diagonal, 0);
 pair I = center + (0, -diagonal);
@@ -80,5 +82,14 @@ var leftIntersect = intersectionpoint(left, triangleLeft);
 write(coordinates(rightIntersect));
 write(coordinates(leftIntersect));
 
-write(x=unit(triangleLeft.v));
-write(x=unit(triangleRight.v));
+vector rightDistance = unit(triangleRight.v) * centerToPolygon;
+vector leftDistance = unit(triangleLeft.v) * centerToPolygon;
+
+write(x=rightDistance);
+write(x=leftDistance);
+
+point pointOnRightLine = B + rightDistance;
+point pointOnLeftLine = B + leftDistance;
+
+line rightLine = parallel(pointOnRightLine, triangleRight);
+line leftLine = parallel(pointOnLeftLine, triangleLeft);
