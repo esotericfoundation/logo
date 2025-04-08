@@ -40,8 +40,8 @@ point smallSquareLeft = center - (diagonal, 0);
 
 path smallSquare = smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle;
 
-line smallSquareBottomRightSide = line(smallSquareBottom, false, smallSquareRight, true);
-line smallSquareBottomLeftSide = line(smallSquareBottom, false, smallSquareLeft, true);
+line smallSquareBottomRight = line(smallSquareBottom, false, smallSquareRight, true);
+line smallSquareBottomLeft = line(smallSquareBottom, false, smallSquareLeft, true);
 
 // SIDE TRIANGLES
 
