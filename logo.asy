@@ -31,7 +31,7 @@ real centerToA = arclength(center--equilateralTriangleRight);
 real centerToB = arclength(center--equilateralTriangleTop);
 real centerToC = arclength(center--equilateralTriangleLeft);
 
-assert(centerToA == centerToB & centerToB == centerToC, "Defined center is not exactly in the center of the equilateral triangle!");
+assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon, "Defined center is not exactly in the center of the equilateral triangle!");
 
 filldraw(smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle);
 
