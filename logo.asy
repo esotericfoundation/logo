@@ -31,6 +31,8 @@ real centerToA = arclength(center--equilateralTriangleRight);
 real centerToB = arclength(center--equilateralTriangleTop);
 real centerToC = arclength(center--equilateralTriangleLeft);
 
+assert(centerToA == centerToB == centerToC, "Defined center is not exactly in the center of the equilateral triangle!");
+
 write(centerToA);
 write(centerToB);
 write(centerToC);
