@@ -39,11 +39,6 @@ write(centerToC);
 
 filldraw(smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle);
 
-// label("I", I);
-// label("J", J);
-// label("K", K);
-// label("L", L);
-
 line smallSquareBottomRightSide = line(smallSquareBottom, false, smallSquareRight, true);
 line smallSquareBottomLeftSide = line(smallSquareBottom, false, smallSquareLeft, true);
 
