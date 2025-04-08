@@ -8,7 +8,7 @@ size(512, 512);
 
 // DEFINITIONS
 
-pair center = (0, 0);
+point center = (0, 0);
 
 // MAIN POLYGON
 
@@ -22,7 +22,7 @@ line equilateralTriangleRightSide = line(equilateralTriangleRight, false, equila
 line equilateralTriangleLeftSide = line(equilateralTriangleLeft, false, equilateralTriangleTop, false);
 
 real rightAngleTriangleHeight = equilateralTriangleLeft.y + equilateralTriangleRight.x;
-pair rightAngleTriangleTop = (0, rightAngleTriangleHeight);
+point rightAngleTriangleTop = (0, rightAngleTriangleHeight);
 
 path mainPolygon = equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightAngleTriangleTop--cycle;
 
@@ -33,10 +33,10 @@ real diagonal = centerToD * 1/2;
 
 real centerToPolygon = distance(center, line(rightAngleTriangleTop, false, equilateralTriangleRight, false));
 
-pair smallSquareTop = center + (0, diagonal);
-pair smallSquareRight = center + (diagonal, 0);
-pair smallSquareBottom = center - (0, diagonal);
-pair smallSquareLeft = center - (diagonal, 0);
+point smallSquareTop = center + (0, diagonal);
+point smallSquareRight = center + (diagonal, 0);
+point smallSquareBottom = center - (0, diagonal);
+point smallSquareLeft = center - (diagonal, 0);
 
 path smallSquare = smallSquareTop--smallSquareRight--smallSquareBottom--smallSquareLeft--cycle;
 
