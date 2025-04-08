@@ -15,23 +15,6 @@ pair rightAngleTriangleTop = (0, rightAngleTriangleCathetusLength);
 
 filldraw(equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightAngleTriangleTop--cycle);
 
-path unitSquare = polygon(4);
-path square = rotate(45)*unitSquare;
-
-pair E = point(square, 0);
-pair F = point(square, 1);
-pair G = point(square, 2);
-pair H = point(square, 3);
-
-write("Small square:");
-write(square);
-
-write("Points:");
-write(E);
-write(F);
-write(G);
-write(H);
-
 pair center = (0, 0);
 
 real centerToD = arclength(center--rightAngleTriangleTop);
