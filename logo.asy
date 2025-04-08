@@ -10,8 +10,8 @@ point equilateralTriangleRight = point(equilateralTriangle, 0);
 point equilateralTriangleTop = point(equilateralTriangle, 1);
 point equilateralTriangleLeft = point(equilateralTriangle, 2);
 
-real rightAngleTriangleCathetus = equilateralTriangleLeft.y + equilateralTriangleRight.x;
-pair rightAngleTriangleTop = (0, rightAngleTriangleCathetus);
+real rightAngleTriangleCathetusLength = equilateralTriangleLeft.y + equilateralTriangleRight.x;
+pair rightAngleTriangleTop = (0, rightAngleTriangleCathetusLength);
 
 filldraw(equilateralTriangleRight--equilateralTriangleTop--equilateralTriangleLeft--rightAngleTriangleTop--cycle);
 
