@@ -1,12 +1,13 @@
 // IMPORTS
 
+import settings;
 import geometry;
 
 // IMAGE PROPERTIES
 
 size(512, 512);
 
-settings.pngdriver="pngalpha";
+pngdriver="pngalpha";
 
 // DEFINITIONS
 
