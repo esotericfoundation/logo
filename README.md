@@ -6,7 +6,7 @@ The official logo of the [Esoteric Foundation][author].
 
 ## Supported Formats
 
-The following formats of the logo are officially supported and released as part of this project:
+The following image formats for the logo are officially supported and released as part of this project:
 
 - `png`
 - `svg`
