@@ -25,8 +25,10 @@ jobs:
       - name: Build and install Asymptote
         run: |
           cd asymptote
+
           ./autogen.sh
           ./configure
+
           make all
           sudo make install
       - name: Build logo
