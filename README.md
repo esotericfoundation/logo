@@ -11,7 +11,7 @@ The following image formats for the logo are officially supported and released a
 - `svg`
 - `png`
 
-Keep in mind that the `svg` and `png` formats are used because they provide what is most likely the highest quality for the logo image.
+The `svg` and `png` formats are used because they provide what is most likely the highest quality for the logo image.
 
 You should use `svg` where possible as our logo is a vector image.
 
