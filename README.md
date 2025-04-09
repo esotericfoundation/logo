@@ -8,10 +8,12 @@ The official logo of the [Esoteric Foundation][author].
 
 The following image formats for the logo are officially supported and released as part of this project:
 
-- `png`
 - `svg`
+- `png`
 
-Keep in mind that the `png` and `svg` formats are used because they provide what is most likely the highest quality for the logo image.
+Keep in mind that the `svg` and `png` formats are used because they provide what is most likely the highest quality for the logo image.
+
+You should use `svg` where possible as our logo is a vector image.
 
 ## License
 
