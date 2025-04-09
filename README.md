@@ -40,12 +40,6 @@ These formats are used because they provide the highest quality for the logo ima
 
 [author]: https://esoteric.foundation
 
-<!-- Files -->
-
-[credit]: ./docs/CREDIT.md
-
-<!-- Credit -->
-
 <!-- Asymptote -->
 
 [asymptote]: https://github.com/vectorgraphics/asymptote/tree/3.02git
