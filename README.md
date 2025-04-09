@@ -44,11 +44,6 @@ The `svg` and `png` formats are used because they provide what is most likely th
 
 [credit]: ./docs/CREDIT.md
 
-<!-- References -->
-
-[asymptote]: https://github.com/vectorgraphics/asymptote
-[imagemagick]: https://github.com/ImageMagick/ImageMagick
-
 <!-- Credit -->
 
 <!-- Asymptote -->
