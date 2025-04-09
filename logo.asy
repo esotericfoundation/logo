@@ -80,8 +80,8 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 // DRAWING
 
-filldraw(mainPolygon);
-filldraw(smallSquare);
+filldraw(mainPolygon, white, white);
+filldraw(smallSquare, white, white);
 
-filldraw(rightSideTriangle);
-filldraw(leftSideTriangle);
+filldraw(rightSideTriangle, white, white);
+filldraw(leftSideTriangle, white, white);
