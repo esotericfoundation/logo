@@ -11,9 +11,7 @@ The following formats of the logo are officially supported and released as part 
 - `png`
 - `svg`
 
-However, nothing is stopping you from generating your own output formats using [Asymptote][asymptote] or some sort of conversion tool like [ImageMagick][imagemagick] to generate the logo in other formats.
-
-Do keep in mind though that the `png` and `svg` formats are used because they provide what is most likely the highest quality for the logo image.
+Keep in mind that the `png` and `svg` formats are used because they provide what is most likely the highest quality for the logo image.
 
 ## License
 
