@@ -16,6 +16,10 @@ The `svg` and `png` formats are used because they provide what is most likely th
 > [!NOTE]
 > You should use `svg` where possible as our logo is a vector image.
 
+## Information
+
+- [Credit][credit]
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
@@ -31,6 +35,10 @@ The `svg` and `png` formats are used because they provide what is most likely th
 [root]: /
 
 [author]: https://esoteric.foundation
+
+<!-- Files -->
+
+[credit]: ./docs/CREDIT.md
 
 <!-- References -->
 
