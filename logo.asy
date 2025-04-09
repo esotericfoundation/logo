@@ -6,6 +6,8 @@ import geometry;
 
 size(512, 512);
 
+settings.pngdriver="pngalpha";
+
 // DEFINITIONS
 
 point center = (0, 0);
