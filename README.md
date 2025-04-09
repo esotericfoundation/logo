@@ -4,6 +4,17 @@
 
 The official logo of the [Esoteric Foundation][author].
 
+## Supported Formats
+
+The following formats of the logo are officially supported and released as part of this project:
+
+- `png`
+- `svg`
+
+However, nothing is stopping you from generating your own output formats using [Asymptote][asymptote] or some sort of conversion tool like [ImageMagick][imagemagick] to generate the logo in other formats.
+
+Do keep in mind though that the `png` and `svg` formats are used because they provide what is most likely the highest quality for the logo image.
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
@@ -19,6 +30,11 @@ The official logo of the [Esoteric Foundation][author].
 [root]: /
 
 [author]: https://esoteric.foundation
+
+<!-- References -->
+
+[asymptote]: https://github.com/vectorgraphics/asymptote
+[imagemagick]: https://github.com/ImageMagick/ImageMagick
 
 <!-- Badges -->
 
