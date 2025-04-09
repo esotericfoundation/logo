@@ -16,9 +16,13 @@ The `svg` and `png` formats are used because they provide what is most likely th
 > [!NOTE]
 > You should use `svg` where possible as our logo is a vector image.
 
-## Information
+## Credit
 
-- [Credit][credit]
+### [Asymptote][asymptote]
+
+<sup>[&copy; 2004-2025][asymptote-copyright] [Andy Hammerlindl][andy-hammerlindl], [John C. Bowman][john-bowman] and [Tom Prince][tom-prince]</sup>\
+<sup>By [Andy Hammerlindl][andy-hammerlindl], [John C. Bowman][john-bowman], [Tom Prince][tom-prince] and [Asymptote contributors][asymptote-contributors]</sup>\
+<sup>[Licensed][asymptote-license-notice] under the [LGPL 3.0][asymptote-license]</sup>
 
 ## License
 
@@ -44,6 +48,19 @@ The `svg` and `png` formats are used because they provide what is most likely th
 
 [asymptote]: https://github.com/vectorgraphics/asymptote
 [imagemagick]: https://github.com/ImageMagick/ImageMagick
+
+<!-- Credit -->
+
+<!-- Asymptote -->
+
+[asymptote]: https://github.com/vectorgraphics/asymptote/tree/3.02git
+[andy-hammerlindl]: https://ahammerl.github.io/
+[john-bowman]: http://www.math.ualberta.ca/~bowman/
+[tom-prince]: https://www.linkedin.com/in/tom-prince/
+[asymptote-contributors]: https://github.com/vectorgraphics/asymptote/graphs/contributors
+[asymptote-copyright]: https://github.com/vectorgraphics/asymptote/blob/3.02git/README#L2
+[asymptote-license-notice]: https://github.com/vectorgraphics/asymptote/blob/3.02git/README#L22
+[asymptote-license]: https://github.com/vectorgraphics/asymptote/blob/3.02git/LICENSE.LESSER
 
 <!-- Badges -->
 
