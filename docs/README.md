@@ -11,7 +11,7 @@ The following image formats for the logo are officially supported:
 - [`svg`][svg]
 - [`png`][png]
 
-The logo can be found in the above formats on the [releases][releases] page on GitHub.
+The logo can be found in the above formats on the [releases][releases] page on GitHub. Releases may or may not be up-to-date with the logo source code.
 
 These formats are used because they provide the highest quality for the logo image.
 
