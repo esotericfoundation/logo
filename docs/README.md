@@ -43,6 +43,8 @@ These formats are used because they provide the highest quality for the logo ima
 [author]: https://esoteric.foundation
 [releases]: https://github.com/esotericfoundation/logo/releases
 
+<!-- Credit -->
+
 <!-- Asymptote -->
 
 [asymptote]: https://github.com/vectorgraphics/asymptote/tree/3.02git
