@@ -11,6 +11,8 @@ The following image formats for the logo are officially supported:
 - `svg`
 - `png`
 
+Pre-built versions of the logo in the above formats can be found and downloaded on the [releases][releases] page on GitHub.
+
 These formats are used because they provide the highest quality for the logo image.
 
 > [!NOTE]
@@ -39,6 +41,7 @@ These formats are used because they provide the highest quality for the logo ima
 [root]: /
 
 [author]: https://esoteric.foundation
+[releases]: https://github.com/esotericfoundation/logo/releases
 
 <!-- Asymptote -->
 
