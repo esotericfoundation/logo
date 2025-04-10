@@ -8,15 +8,15 @@ The official logo of the [Esoteric Foundation][author].
 
 The following image formats for the logo are officially supported:
 
-- `svg`
-- `png`
+- [`svg`][svg]
+- [`png`][png]
 
 The logo can be found in the above formats on the [releases][releases] page on GitHub.
 
 These formats are used because they provide the highest quality for the logo image.
 
 > [!NOTE]
-> `svg` versions of the logo should be used where possible as the logo is a vector image and the `svg` format specialises in handling vector graphics.
+> [`svg`][svg] versions of the logo should be used where possible as the logo is a [vector image][vector-images] and the [`svg`][svg] format specialises in handling vector graphics.
 
 ## Credit
 
@@ -42,6 +42,12 @@ These formats are used because they provide the highest quality for the logo ima
 
 [author]: https://esoteric.foundation
 [releases]: https://github.com/esotericfoundation/logo/releases
+
+<!-- References -->
+
+[svg]: https://en.wikipedia.org/wiki/SVG
+[png]: https://en.wikipedia.org/wiki/PNG
+[vector-images]: https://en.wikipedia.org/wiki/Vector_graphics
 
 <!-- Credit -->
 
