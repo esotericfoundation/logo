@@ -81,6 +81,18 @@ real centerToC = arclength(center--equilateralTriangleLeft);
 
 assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon & centerToA - centerToC < realEpsilon, "Defined center is not exactly in the center of the equilateral triangle!");
 
+// TYPES
+
+string type;
+
+usersetting();
+
+if (type == "circle") {
+    path circle = circle(center, 1.5 * (centerToA + smallSquareTopToPolygon));
+
+    filldraw(circle, black, black);
+}
+
 // DRAWING
 
 filldraw(mainPolygon, white, white);
