@@ -16,7 +16,7 @@ The logo can be found in the above formats on the [releases][releases] page on G
 These formats are used because they provide the highest quality for the logo image.
 
 > [!NOTE]
-> [`svg`][svg] versions of the logo should be used where possible as the logo is a [vector image][vector-images] and the [`svg`][svg] format specialises in handling vector graphics.
+> [`svg`][svg] versions of the logo should be used where possible as the logo is a [vector image][vector-images] and the [`svg`][svg] format specialises in handling [vector graphics][vector-images].
 
 ## Credit
 
