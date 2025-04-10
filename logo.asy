@@ -87,10 +87,21 @@ string type;
 
 usersetting();
 
+real radius = 1.5 * (centerToA + smallSquareTopToPolygon);
+
 if (type == "circle") {
-    path circle = circle(center, 1.5 * (centerToA + smallSquareTopToPolygon));
+    path circle = circle(center, radius);
 
     filldraw(circle, black, black);
+} else if (type == "square-centered") {
+    point largeSquareTopRight = center + (radius, radius);
+    point largeSquareBottomRight = center + (radius, -radius);
+    point largeSquareBottomLeft = center - (radius, radius);
+    point largeSquareTopLeft = center - (radius, -radius);
+
+    path largeSquare = largeSquareTopRight--largeSquareBottomRight--largeSquareBottomLeft--largeSquareTopLeft--cycle;
+
+    filldraw(largeSquare, black, black);
 }
 
 // DRAWING
