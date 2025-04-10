@@ -5,7 +5,7 @@ import geometry;
 
 // IMAGE PROPERTIES
 
-size(512, 512);
+size(512);
 
 pngdriver="pngalpha";
 
