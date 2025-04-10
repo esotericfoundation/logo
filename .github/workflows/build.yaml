@@ -34,4 +34,4 @@ jobs:
           make all
           sudo make install
       - name: Build logo
-        run: asy logo
+        run: ./scripts/build.sh
