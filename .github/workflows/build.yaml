@@ -33,6 +33,8 @@ jobs:
 
           make all
           sudo make install
+
+          cd ..
       - name: Build logo
         run: ./scripts/build.sh
       - name: Export generated images
