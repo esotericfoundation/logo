@@ -1,12 +1,12 @@
 #!/bin/bash
 
-mkdir 'output'
+mkdir -p 'output'
 
-asy logo -f png -o 'logo' -cd 'output'
-asy logo -f svg -o 'logo' -cd 'output'
+asy logo -f png -o './output/logo'
+asy logo -f svg -o './output/logo'
 
-asy logo -f png -u 'type = "circle"' -o 'logo-circle' -cd 'output'
-asy logo -f svg -u 'type = "circle"' -o 'logo-circle' -cd 'output'
+asy logo -f png -u 'type = "circle"' -o './output/logo-circle'
+asy logo -f svg -u 'type = "circle"' -o './output/logo-circle'
 
-asy logo -f png -u 'type = "square-centered"' -o 'logo-square-centered' -cd 'output'
-asy logo -f svg -u 'type = "square-centered"' -o 'logo-square-centered' -cd 'output'
+asy logo -f png -u 'type = "square-centered"' -o './output/logo-square-centered'
+asy logo -f svg -u 'type = "square-centered"' -o './output/logo-square-centered'
