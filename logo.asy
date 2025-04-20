@@ -87,7 +87,7 @@ string type;
 
 usersetting();
 
-real radius = 1.5 * (centerToA + smallSquareTopToPolygon);
+real radius = centerToA + smallSquareTopToPolygon;
 
 if (type == "circle") {
     path circle = circle(center, radius);
