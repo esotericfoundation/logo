@@ -1,12 +1,6 @@
 # Lock files
 .~lock.*#
 
-# Node modules
-node_modules
-
-# Unneeded package.json history and information
-package-lock.json
-
 # Exported image files
 *.svg
 *.png
