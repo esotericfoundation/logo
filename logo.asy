@@ -81,27 +81,47 @@ real centerToC = arclength(center--equilateralTriangleLeft);
 
 assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon & centerToA - centerToC < realEpsilon, "Defined center is not exactly in the center of the equilateral triangle!");
 
+// UNIVERSAL DEFINITIONS
+
+real radius = centerToA + smallSquareTopToPolygon;
+
+point largeSquareTopRight = center + (radius, radius);
+point largeSquareBottomRight = center + (radius, -radius);
+point largeSquareBottomLeft = center - (radius, radius);
+point largeSquareTopLeft = center - (radius, -radius);
+
 // TYPES
 
 string type;
 
 usersetting();
 
-real radius = centerToA + smallSquareTopToPolygon;
-
 if (type == "circle") {
     path circle = circle(center, radius);
 
     filldraw(circle, black, black);
 } else if (type == "square-centered") {
-    point largeSquareTopRight = center + (radius, radius);
-    point largeSquareBottomRight = center + (radius, -radius);
-    point largeSquareBottomLeft = center - (radius, radius);
-    point largeSquareTopLeft = center - (radius, -radius);
-
     path largeSquare = largeSquareTopRight--largeSquareBottomRight--largeSquareBottomLeft--largeSquareTopLeft--cycle;
 
     filldraw(largeSquare, black, black);
+} else if (type == "square-equidistant") {
+    real triangleToSquareTop = distance(equilateralTriangleTop, line(largeSquareTopLeft, false, largeSquareTopRight, false));
+
+    point intermediarySquareTopRight = largeSquareTopRight - (0, triangleToSquareTop);
+    point intermediarySquareBottomRight = largeSquareBottomRight - (0, triangleToSquareTop);
+    point intermediarySquareBottomLeft = largeSquareBottomLeft - (0, triangleToSquareTop);
+    point intermediarySquareTopLeft = largeSquareTopLeft - (0, triangleToSquareTop);
+
+    real triangleToSquareBottom = distance(equilateralTriangleRight, line(intermediarySquareBottomLeft, false, intermediarySquareBottomRight, false));
+
+    point equidistantSquareTopRight = intermediarySquareTopRight + (0, triangleToSquareBottom / 2);
+    point equidistantSquareBottomRight = intermediarySquareBottomRight + (0, triangleToSquareBottom / 2);
+    point equidistantSquareBottomLeft = intermediarySquareBottomLeft + (0, triangleToSquareBottom / 2);
+    point equidistantSquareTopLeft = intermediarySquareTopLeft + (0, triangleToSquareBottom / 2);
+
+    path equidistantSquare = equidistantSquareTopRight--equidistantSquareBottomRight--equidistantSquareBottomLeft--equidistantSquareTopLeft--cycle;
+
+    filldraw(equidistantSquare, black, black);
 }
 
 // DRAWING

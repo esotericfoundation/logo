@@ -10,3 +10,6 @@ asy logo -f svg -u 'type = "circle"' -o './output/logo-circle'
 
 asy logo -f png -u 'type = "square-centered"' -o './output/logo-square-centered'
 asy logo -f svg -u 'type = "square-centered"' -o './output/logo-square-centered'
+
+asy logo -f svg -u 'type = "square-equidistant"' -o './output/logo-square-equidistant'
+asy logo -f png -u 'type = "square-equidistant"' -o './output/logo-square-equidistant'
