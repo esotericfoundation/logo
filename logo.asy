@@ -85,11 +85,6 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 real radius = centerToA + smallSquareTopToPolygon;
 
-point largeSquareTopRight = center + (radius, radius);
-point largeSquareBottomRight = center + (radius, -radius);
-point largeSquareBottomLeft = center - (radius, radius);
-point largeSquareTopLeft = center - (radius, -radius);
-
 // TYPES
 
 string type;
@@ -101,10 +96,22 @@ if (type == "circle") {
 
     filldraw(circle, black, black);
 } else if (type == "square-centered") {
+    point largeSquareTopRight = center + (radius, radius);
+    point largeSquareBottomRight = center + (radius, -radius);
+    point largeSquareBottomLeft = center - (radius, radius);
+    point largeSquareTopLeft = center - (radius, -radius);
+
     path largeSquare = largeSquareTopRight--largeSquareBottomRight--largeSquareBottomLeft--largeSquareTopLeft--cycle;
 
     filldraw(largeSquare, black, black);
 } else if (type == "square-equidistant") {
+    real radius = equilateralTriangleRight.x + smallSquareTopToPolygon;
+
+    point largeSquareTopRight = center + (radius, radius);
+    point largeSquareBottomRight = center + (radius, -radius);
+    point largeSquareBottomLeft = center - (radius, radius);
+    point largeSquareTopLeft = center - (radius, -radius);
+
     real triangleToSquareTop = distance(equilateralTriangleTop, line(largeSquareTopLeft, false, largeSquareTopRight, false));
 
     point intermediarySquareTopRight = largeSquareTopRight - (0, triangleToSquareTop);
