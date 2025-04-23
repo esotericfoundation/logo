@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf 'output'
 mkdir -p 'output'
 
 asy logo -f png -o './output/logo'
