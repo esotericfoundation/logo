@@ -26,7 +26,7 @@ These formats are used because they provide the highest quality for the logo ima
 
 <sup>[&copy; 2004-2025][asymptote-copyright] [Andy Hammerlindl][andy-hammerlindl], [John C. Bowman][john-bowman] and [Tom Prince][tom-prince]</sup>\
 <sup>By [Andy Hammerlindl][andy-hammerlindl], [John C. Bowman][john-bowman], [Tom Prince][tom-prince] and [Asymptote contributors][asymptote-contributors]</sup>\
-<sup>[Licensed][asymptote-license-notice] under the [LGPL 3.0][asymptote-license]</sup>
+<sup>[Licensed][asymptote-license-notice] under the [LGPL 3.0][asymptote-license] or later</sup>
 
 ## License
 
