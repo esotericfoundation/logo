@@ -9,6 +9,13 @@ size(512);
 
 pngdriver="pngalpha";
 
+// USER SETTINGS
+
+string type;
+real borderDistance = 1;
+
+usersetting();
+
 // DEFINITIONS
 
 point center = (0, 0);
@@ -83,11 +90,9 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 // UNIVERSAL DEFINITIONS
 
-real radius = centerToA + smallSquareTopToPolygon;
+real radius = centerToA + borderDistance * smallSquareTopToPolygon;
 
 // TYPES
-
-string type;
 
 usersetting();
 
@@ -105,7 +110,7 @@ if (type == "circle") {
 
     filldraw(largeSquare, black, black);
 } else if (type == "square-equidistant") {
-    real radius = equilateralTriangleRight.x + smallSquareTopToPolygon;
+    real radius = equilateralTriangleRight.x + borderDistance * smallSquareTopToPolygon;
 
     point largeSquareTopRight = center + (radius, radius);
     point largeSquareBottomRight = center + (radius, -radius);
