@@ -110,7 +110,11 @@ if (type == "circle") {
 
     filldraw(largeSquare, black, black);
 } else if (type == "square-equidistant") {
-    real radius = equilateralTriangleRight.x + borderDistance * smallSquareTopToPolygon;
+    real margin = borderDistance * smallSquareTopToPolygon;
+    write("Generating equidistant square with the following distance from the following margin");
+    write(margin);
+
+    real radius = equilateralTriangleRight.x + margin;
 
     point largeSquareTopRight = center + (radius, radius);
     point largeSquareBottomRight = center + (radius, -radius);
@@ -130,6 +134,10 @@ if (type == "circle") {
     point equidistantSquareBottomRight = intermediarySquareBottomRight + (0, triangleToSquareBottom / 2);
     point equidistantSquareBottomLeft = intermediarySquareBottomLeft + (0, triangleToSquareBottom / 2);
     point equidistantSquareTopLeft = intermediarySquareTopLeft + (0, triangleToSquareBottom / 2);
+
+    real equidistantSquareSideLength = equidistantSquareTopRight.x - equidistantSquareTopLeft.x;
+    write("Equidistant square has the following side length:");
+    write(equidistantSquareSideLength);
 
     path equidistantSquare = equidistantSquareTopRight--equidistantSquareBottomRight--equidistantSquareBottomLeft--equidistantSquareTopLeft--cycle;
 
