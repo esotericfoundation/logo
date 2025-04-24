@@ -8,7 +8,7 @@ This repository contains an [Asymptote][asymptote-website] script ([`logo.asy`][
 
 ## Releases
 
-The logo can be found in image form on the [releases][releases] page on GitHub. Releases may or may not be up-to-date with the logo source code.
+All official variants of the logo can be found in image form on the [releases][releases] page on GitHub. Releases may or may not be up-to-date with the logo source code.
 
 ## Supported Image Formats
 
