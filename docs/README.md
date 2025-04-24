@@ -4,6 +4,8 @@
 
 The official logo of the [Esoteric Foundation][author].
 
+This repository contains an [Asymptote][asymptote-website] script ([`logo.asy`][logo-script]) that provides a way to generate different variants of the logo by using [Asymptote][asymptote-website]'s `-user` input [command line option][asymptote-cli-options]. See [`build.sh`][build-script] for inputs to the script that generate all official variants of the logo.
+
 ## Releases
 
 The logo can be found in image form on the [releases][releases] page on GitHub. Releases may or may not be up-to-date with the logo source code.
@@ -53,6 +55,8 @@ These formats are used because they provide the highest quality for the logo ima
 <!-- Asymptote -->
 
 [asymptote]: https://github.com/vectorgraphics/asymptote/tree/3.02git
+[asymptote-website]: https://asymptote.sourceforge.io/
+[asymptote-cli-options]: https://asymptote.sourceforge.io/asymptote.pdf#Options
 [andy-hammerlindl]: https://ahammerl.github.io/
 [john-bowman]: http://www.math.ualberta.ca/~bowman/
 [tom-prince]: https://www.linkedin.com/in/tom-prince/
@@ -60,6 +64,13 @@ These formats are used because they provide the highest quality for the logo ima
 [asymptote-copyright]: https://github.com/vectorgraphics/asymptote/blob/3.02git/README#L2
 [asymptote-license-notice]: https://github.com/vectorgraphics/asymptote/blob/3.02git/README#L22
 [asymptote-license]: https://github.com/vectorgraphics/asymptote/blob/3.02git/LICENSE.LESSER
+
+<!-- Files -->
+
+<!-- Scripts -->
+
+[logo-script]: ../logo.asy
+[build-script]: ../scripts/build.sh
 
 <!-- Badges -->
 
