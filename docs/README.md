@@ -22,7 +22,7 @@ See [Asymptote command line options][asymptote-cli-options], run `asy -h` or see
 
 The `-u` (or `-user`) [command line option][asymptote-cli-options] can be used to run arbitrary [Asymptote][asymptote-website] code provided by the user running the script.
 
-The [logo script][logo-script] takes advantage of this feature by defining [variables](#variables) that the user can change. See [`build.sh`][build-script] for examples.
+The [logo script][logo-script] takes advantage of this feature by defining [variables](#variables) that the user can change in order to generate other variants of the logo. See [`build.sh`][build-script] for examples.
 
 #### Variables
 
