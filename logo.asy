@@ -86,7 +86,7 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 real radius = centerToA + borderDistance * smallSquareTopToPolygon;
 
-// TYPES
+// VARIANTS
 
 if (type == "circle") {
     path circle = circle(center, radius);
