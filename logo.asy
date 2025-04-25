@@ -7,6 +7,7 @@ import geometry;
 
 string type;
 real borderDistance = 1;
+real borderRadiusFraction = 0;
 
 usersetting();
 
@@ -102,7 +103,20 @@ if (type == "circle") {
 
     filldraw(largeSquare, black, black);
 } else if (type == "square-equidistant") {
-    real margin = borderDistance * smallSquareTopToPolygon;
+    // EQUATION TO FIND MARGIN
+    // R_x = x value of equilateral triangle right point
+    // S_s = side length of the big square
+    // m = margin
+    // r = border radius (specified by the user)
+    // S_s = 2R_x + 2m
+    // S_s * r <= m
+    // => (2R_x + 2m) * r <= m
+    // => 2R_x * r + 2mr <= m
+    // => 2R_x * r <= m - 2mr
+    // => 2R_x * r <= m(1 - 2r)
+    // => (2R_x * r) / (1 - 2r) <= m
+
+    real margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);
     write("Generating equidistant square with the following distance from the following margin");
     write(margin);
 
