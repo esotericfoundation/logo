@@ -155,8 +155,8 @@ if (type == "circle") {
 filldraw(mainPolygon, white, white);
 filldraw(smallSquare, white);
 
-filldraw(rightSideTriangle, white, white);
-filldraw(leftSideTriangle, white, white);
+filldraw(rightSideTriangle, white);
+filldraw(leftSideTriangle, white);
 
 // IMAGE PROPERTIES
 
