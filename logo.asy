@@ -92,7 +92,7 @@ real radius = centerToA + borderDistance * smallSquareTopToPolygon;
 if (type == "circle") {
     path circle = circle(center, radius);
 
-    filldraw(circle, black);
+    filldraw(circle, black, nullpen);
 } else if (type == "square-centered") {
     point largeSquareTopRight = center + (radius, radius);
     point largeSquareBottomRight = center + (radius, -radius);
@@ -101,7 +101,7 @@ if (type == "circle") {
 
     path largeSquare = largeSquareTopRight--largeSquareBottomRight--largeSquareBottomLeft--largeSquareTopLeft--cycle;
 
-    filldraw(largeSquare, black);
+    filldraw(largeSquare, black, nullpen);
 } else if (type == "square-equidistant") {
     // EQUATION TO FIND MARGIN
     // R_x = x value of equilateral triangle right point
@@ -147,16 +147,16 @@ if (type == "circle") {
 
     path equidistantSquare = equidistantSquareTopRight--equidistantSquareBottomRight--equidistantSquareBottomLeft--equidistantSquareTopLeft--cycle;
 
-    filldraw(equidistantSquare, black);
+    filldraw(equidistantSquare, black, nullpen);
 }
 
 // DRAWING
 
-filldraw(mainPolygon, white);
-filldraw(smallSquare, white);
+filldraw(mainPolygon, white, nullpen);
+filldraw(smallSquare, white, nullpen);
 
-filldraw(rightSideTriangle, white);
-filldraw(leftSideTriangle, white);
+filldraw(rightSideTriangle, white, nullpen);
+filldraw(leftSideTriangle, white, nullpen);
 
 // IMAGE PROPERTIES
 
