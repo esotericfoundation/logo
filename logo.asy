@@ -3,12 +3,6 @@
 import settings;
 import geometry;
 
-// IMAGE PROPERTIES
-
-size(512);
-
-pngdriver="pngalpha";
-
 // USER SETTINGS
 
 string type;
@@ -151,3 +145,9 @@ filldraw(smallSquare, white, white);
 
 filldraw(rightSideTriangle, white, white);
 filldraw(leftSideTriangle, white, white);
+
+// IMAGE PROPERTIES
+
+size(512);
+
+pngdriver="pngalpha";
