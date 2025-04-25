@@ -88,8 +88,6 @@ real radius = centerToA + borderDistance * smallSquareTopToPolygon;
 
 // TYPES
 
-usersetting();
-
 if (type == "circle") {
     path circle = circle(center, radius);
 
