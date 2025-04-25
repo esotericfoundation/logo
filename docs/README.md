@@ -10,6 +10,18 @@ This repository contains an [Asymptote][asymptote-website] script ([`logo.asy`][
 
 - [Asymptote][asymptote-website]
 
+## Usage
+
+Run the [script][logo-script] by using the command `asy logo`.
+
+See [Asymptote command line options][asymptote-cli-options], run `asy -h` or see [`build.sh`][build-script] for more options to customise the logo output.
+
+### User Input
+
+The `-u` (or `-user`) [command line option][asymptote-cli-options] can be used to run arbitrary [Asymptote][asymptote-website] code provided by the user running the script.
+
+The [logo script][logo-script] takes advantage of this feature by defining variables that the user can change. See [`build.sh`][build-script] for examples.
+
 ## Releases
 
 All official variants of the logo can be found in image form on the [releases][releases] page on GitHub. Releases may or may not be up-to-date with the logo source code.
