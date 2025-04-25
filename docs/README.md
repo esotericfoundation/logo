@@ -4,7 +4,9 @@
 
 The official logo of the [Esoteric Foundation][author].
 
-This repository contains an [Asymptote][asymptote-website] script ([`logo.asy`][logo-script]) that provides a way to generate different variants of the logo by using [Asymptote][asymptote-website]'s `-user` input [command line option][asymptote-cli-options]. See [`build.sh`][build-script] for inputs to the script that generate all official variants of the logo.
+This repository contains an [Asymptote][asymptote-website] script ([`logo.asy`][logo-script]) that provides a way to generate different variants of the logo by using [Asymptote][asymptote-website]'s `-user` input [command line option][asymptote-cli-options].
+
+See [`build.sh`][build-script] for inputs to the script that generate all official variants of the logo.
 
 ## Requirements
 
