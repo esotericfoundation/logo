@@ -153,7 +153,7 @@ if (type == "circle") {
 // DRAWING
 
 filldraw(mainPolygon, white, white);
-filldraw(smallSquare, white, white);
+filldraw(smallSquare, white);
 
 filldraw(rightSideTriangle, white, white);
 filldraw(leftSideTriangle, white, white);
