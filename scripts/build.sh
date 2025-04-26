@@ -5,17 +5,17 @@ rm -rf 'output'
 mkdir -p 'output'
 
 # Base logo
-asy logo -f png -o './output/logo'
-asy logo -f svg -o './output/logo'
+asy logo -outformat png -outname './output/logo'
+asy logo -outformat svg -outname './output/logo'
 
 # Circle around logo
 # Used for: Discord
-asy logo -f png -u 'type = "circle"; borderDistance = 3' -o './output/logo-circle'
-asy logo -f svg -u 'type = "circle"; borderDistance = 3' -o './output/logo-circle'
+asy logo -outformat png -user 'type = "circle"; borderDistance = 3' -outname './output/logo-circle'
+asy logo -outformat svg -user 'type = "circle"; borderDistance = 3' -outname './output/logo-circle'
 
 # Square around logo
-asy logo -f png -u 'type = "square-centered"' -o './output/logo-square-centered'
-asy logo -f svg -u 'type = "square-centered"' -o './output/logo-square-centered'
+asy logo -outformat png -user 'type = "square-centered"' -outname './output/logo-square-centered'
+asy logo -outformat svg -user 'type = "square-centered"' -outname './output/logo-square-centered'
 
 # Equidistant square
 # Used for: GitHub
@@ -61,5 +61,5 @@ asy logo -f svg -u 'type = "square-centered"' -o './output/logo-square-centered'
 # border-radius-fraction: 3px/16px = 3/16
 
 # Greatest border-radius-fraction: 1/4
-asy logo -f svg -u 'type = "square-equidistant"; borderRadiusFraction = 1/4' -o './output/logo-square-equidistant'
-asy logo -f png -u 'type = "square-equidistant"; borderRadiusFraction = 1/4' -o './output/logo-square-equidistant'
+asy logo -outformat svg -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
+asy logo -outformat png -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
