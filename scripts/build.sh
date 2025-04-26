@@ -4,10 +4,6 @@
 rm -rf 'output'
 mkdir -p 'output'
 
-# Base logo
-asy logo -outformat png -outname './output/logo'
-asy logo -outformat svg -outname './output/logo'
-
 # Circle around logo
 # Used for: Discord
 asy logo -outformat png -user 'type = "circle"; borderDistance = 3' -outname './output/logo-circle'

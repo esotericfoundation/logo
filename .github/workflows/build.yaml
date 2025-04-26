@@ -41,3 +41,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: "output"
+      - name: Test all logo variants
+        run: ./scripts/test.sh
