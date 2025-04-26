@@ -9,8 +9,9 @@ asy logo -f png -o './output/logo'
 asy logo -f svg -o './output/logo'
 
 # Circle around logo
-asy logo -f png -u 'type = "circle"' -o './output/logo-circle'
-asy logo -f svg -u 'type = "circle"' -o './output/logo-circle'
+# Used for: Discord
+asy logo -f png -u 'type = "circle"; borderDistance = 3' -o './output/logo-circle'
+asy logo -f svg -u 'type = "circle"; borderDistance = 3' -o './output/logo-circle'
 
 # Square around logo
 asy logo -f png -u 'type = "square-centered"' -o './output/logo-square-centered'
