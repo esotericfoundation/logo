@@ -7,7 +7,7 @@ import geometry;
 
 string type;
 real borderDistance = 1;
-real borderRadiusFraction = 0;
+real borderRadiusFraction = -1;
 
 // DEFINITIONS
 
@@ -113,7 +113,7 @@ if (type == "circle") {
 
     real margin;
 
-    if (borderRadiusFraction != 0) {
+    if (borderRadiusFraction != -1) {
         margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);
     } else {
         margin = borderDistance * smallSquareTopToPolygon; 
