@@ -126,9 +126,6 @@ if (type == "circle") {
         margin = borderDistance * smallSquareTopToPolygon; 
     }
 
-    write("Generating equidistant square with the following distance from the following margin");
-    write(margin);
-
     real radius = equilateralTriangleRight.x + margin;
 
     point largeSquareTopRight = center + (radius, radius);
@@ -151,8 +148,6 @@ if (type == "circle") {
     point equidistantSquareTopLeft = intermediarySquareTopLeft + (0, triangleToSquareBottom / 2);
 
     real equidistantSquareSideLength = equidistantSquareTopRight.x - equidistantSquareTopLeft.x;
-    write("Equidistant square has the following side length:");
-    write(equidistantSquareSideLength);
 
     path equidistantSquare = equidistantSquareTopRight--equidistantSquareBottomRight--equidistantSquareBottomLeft--equidistantSquareTopLeft--cycle;
 
