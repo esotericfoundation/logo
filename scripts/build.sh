@@ -74,13 +74,13 @@ asy logo\
 asy logo\
     -outformat png\
     -user '\
-        type = "circle"\
+        type = "circle";\
     '\
     -outname './output/logo-circle'
 
 asy logo\
     -outformat svg\
     -user '\
-        type = "circle"\
+        type = "circle";\
     '\
     -outname './output/logo-circle'
