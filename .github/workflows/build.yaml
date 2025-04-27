@@ -40,9 +40,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: "output"
+          name: "output"
       - name: Test all logo variants
         run: ./scripts/test.sh
       - name: Export generated images
         uses: actions/upload-artifact@v4
         with:
           path: "test"
+          name: "test"
