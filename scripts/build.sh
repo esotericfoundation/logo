@@ -64,22 +64,16 @@ asy logo\
 
 # Circle around logo
 # Used for: Discord
-
-# Uses the same width and margin as the GitHub variant.
 asy logo\
     -outformat png\
     -user '\
         type = "circle";\
-        borderRadiusFraction = 1/4;\
-        real margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);\
-        radius = centerToA + margin'\
+        radius = 2 * centerToA'\
     -outname './output/logo-circle'
 
 asy logo\
     -outformat svg\
     -user '\
         type = "circle";\
-        borderRadiusFraction = 1/4;\
-        real margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);\
-        radius = centerToA + margin'\
+        radius = 2 * centerToA'\
     -outname './output/logo-circle'
