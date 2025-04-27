@@ -4,11 +4,6 @@
 rm -rf 'output'
 mkdir -p 'output'
 
-# Circle around logo
-# Used for: Discord
-asy logo -outformat png -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
-asy logo -outformat svg -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
-
 # Equidistant square
 # Used for: GitHub
 
@@ -55,3 +50,10 @@ asy logo -outformat svg -user 'type = "circle"; borderRadiusFraction = 1/4' -out
 # Greatest border-radius-fraction: 1/4
 asy logo -outformat svg -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
 asy logo -outformat png -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
+
+# Circle around logo
+# Used for: Discord
+
+# Uses the same width and margin as the GitHub variant.
+asy logo -outformat png -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
+asy logo -outformat svg -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
