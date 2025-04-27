@@ -6,6 +6,9 @@ import geometry;
 // USER SETTINGS
 
 string type;
+
+real imageSize = 512;
+
 real borderDistance = 1;
 real borderRadiusFraction = -1;
 
@@ -157,6 +160,6 @@ filldraw(leftSideTriangle, white, nullpen);
 
 // IMAGE PROPERTIES
 
-size(512);
+size(imageSize);
 
 pngdriver="pngalpha";
