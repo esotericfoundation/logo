@@ -14,15 +14,7 @@ jobs:
           submodules: 'recursive'
           token: ${{ secrets.PAT }}
       - name: Install build dependencies
-        run: |
-          sudo apt update
-
-          sudo apt install\
-            pyqt5-dev-tools\
-            \
-            texlive-latex-extra\
-            \
-            ghostscript
+        run: ./scripts/dependencies.sh
       - name: Build and install Asymptote
         run: |
           cd asymptote
