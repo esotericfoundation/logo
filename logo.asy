@@ -9,8 +9,6 @@ string type;
 real borderDistance = 1;
 real borderRadiusFraction = 0;
 
-usersetting();
-
 // DEFINITIONS
 
 point center = (0, 0);
@@ -86,6 +84,10 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 // UNIVERSAL DEFINITIONS
 
 real radius = centerToA + borderDistance * smallSquareTopToPolygon;
+
+// USER SETTING CALL
+
+usersetting();
 
 // VARIANTS
 
