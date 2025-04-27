@@ -128,14 +128,14 @@ if (type == "circle") {
     point largeSquareBottomLeft = center - (radius, radius);
     point largeSquareTopLeft = center - (radius, -radius);
 
-    real triangleToSquareTop = distance(equilateralTriangleTop, line(largeSquareTopLeft, false, largeSquareTopRight, false));
+    real triangleToSquareTop = largeSquareTopLeft.y - equilateralTriangleTop.y;
 
     point intermediarySquareTopRight = largeSquareTopRight - (0, triangleToSquareTop);
     point intermediarySquareBottomRight = largeSquareBottomRight - (0, triangleToSquareTop);
     point intermediarySquareBottomLeft = largeSquareBottomLeft - (0, triangleToSquareTop);
     point intermediarySquareTopLeft = largeSquareTopLeft - (0, triangleToSquareTop);
 
-    real triangleToSquareBottom = distance(equilateralTriangleRight, line(intermediarySquareBottomLeft, false, intermediarySquareBottomRight, false));
+    real triangleToSquareBottom = equilateralTriangleRight.y - intermediarySquareBottomLeft.y;
 
     point equidistantSquareTopRight = intermediarySquareTopRight + (0, triangleToSquareBottom / 2);
     point equidistantSquareBottomRight = intermediarySquareBottomRight + (0, triangleToSquareBottom / 2);
