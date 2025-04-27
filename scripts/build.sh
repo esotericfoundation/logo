@@ -48,11 +48,15 @@ mkdir -p 'output'
 # border-radius-fraction: 3px/16px = 3/16
 
 # Greatest border-radius-fraction: 1/4
+
+# A width of 4096px is used.
+# GitHub does not accept larger file sizes (powers of 2).
 asy logo\
     -outformat svg\
     -user '\
         type = "square-equidistant";\
         borderRadiusFraction = 1/4;\
+        imageSize = 4096;\
     '\
     -outname './output/logo-square-equidistant'
 
@@ -61,6 +65,7 @@ asy logo\
     -user '\
         type = "square-equidistant";\
         borderRadiusFraction = 1/4;\
+        imageSize = 4096;\
     '\
     -outname './output/logo-square-equidistant'
 
