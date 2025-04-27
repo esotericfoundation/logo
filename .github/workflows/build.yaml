@@ -16,16 +16,7 @@ jobs:
       - name: Install build dependencies
         run: ./scripts/dependencies.sh
       - name: Build and install Asymptote
-        run: |
-          cd asymptote
-
-          ./autogen.sh
-          ./configure
-
-          make all
-          sudo make install
-
-          cd ..
+        run: ./scripts/asymptote.sh
       - name: Build logo
         run: ./scripts/build.sh
       - name: Export generated images
