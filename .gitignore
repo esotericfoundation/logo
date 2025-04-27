@@ -1,6 +1,9 @@
 # Lock files
 .~lock.*#
 
+# Logs
+*.log
+
 # Exported image files
 output
 test
