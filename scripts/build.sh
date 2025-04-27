@@ -48,8 +48,19 @@ mkdir -p 'output'
 # border-radius-fraction: 3px/16px = 3/16
 
 # Greatest border-radius-fraction: 1/4
-asy logo -outformat svg -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
-asy logo -outformat png -user 'type = "square-equidistant"; borderRadiusFraction = 1/4' -outname './output/logo-square-equidistant'
+asy logo\
+    -outformat svg\
+    -user '\
+        type = "square-equidistant";\
+        borderRadiusFraction = 1/4'\
+    -outname './output/logo-square-equidistant'
+
+asy logo\
+    -outformat png\
+    -user '\
+        type = "square-equidistant";\
+        borderRadiusFraction = 1/4'\
+    -outname './output/logo-square-equidistant'
 
 # Circle around logo
 # Used for: Discord
