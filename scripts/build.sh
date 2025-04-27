@@ -52,14 +52,16 @@ asy logo\
     -outformat svg\
     -user '\
         type = "square-equidistant";\
-        borderRadiusFraction = 1/4'\
+        borderRadiusFraction = 1/4;\
+    '\
     -outname './output/logo-square-equidistant'
 
 asy logo\
     -outformat png\
     -user '\
         type = "square-equidistant";\
-        borderRadiusFraction = 1/4'\
+        borderRadiusFraction = 1/4;\
+    '\
     -outname './output/logo-square-equidistant'
 
 # Circle around logo
@@ -67,11 +69,13 @@ asy logo\
 asy logo\
     -outformat png\
     -user '\
-        type = "circle"'\
+        type = "circle"\
+    '\
     -outname './output/logo-circle'
 
 asy logo\
     -outformat svg\
     -user '\
-        type = "circle"'\
+        type = "circle"\
+    '\
     -outname './output/logo-circle'
