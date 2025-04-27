@@ -6,7 +6,6 @@ import geometry;
 // USER SETTINGS
 
 string type;
-real borderDistance = 1;
 real borderRadiusFraction = 0;
 
 // DEFINITIONS
@@ -83,7 +82,7 @@ assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon
 
 // UNIVERSAL DEFINITIONS
 
-real radius = centerToA + borderDistance * smallSquareTopToPolygon;
+real radius = 2 * centerToA;
 
 // USER SETTING CALL
 
