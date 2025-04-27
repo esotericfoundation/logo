@@ -2,17 +2,5 @@
 .~lock.*#
 
 # Exported image files
-*.svg
-*.png
-*.eps
-*.pdf
-*.jpeg
-
-# Intermediate files
-*_.aux
-*_.dvi
-*_.log
-*_.tex
-
-# Avoid ignoring icons used in project
-!docs/assets/**/*.svg
+output
+test
