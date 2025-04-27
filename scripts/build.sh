@@ -75,6 +75,7 @@ asy logo\
     -outformat png\
     -user '\
         type = "circle";\
+        imageSize = 8192;\
     '\
     -outname './output/logo-circle'
 
@@ -82,5 +83,6 @@ asy logo\
     -outformat svg\
     -user '\
         type = "circle";\
+        imageSize = 8192;\
     '\
     -outname './output/logo-circle'
