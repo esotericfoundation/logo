@@ -6,6 +6,7 @@ import geometry;
 // USER SETTINGS
 
 string type;
+real borderDistance = 1;
 real borderRadiusFraction = 0;
 
 // DEFINITIONS
@@ -117,7 +118,14 @@ if (type == "circle") {
     // => 2R_x * r <= m(1 - 2r)
     // => (2R_x * r) / (1 - 2r) <= m
 
-    real margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);
+    real margin;
+
+    if (borderRadiusFraction != 0) {
+        margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);
+    } else {
+        margin = borderDistance * smallSquareTopToPolygon; 
+    }
+
     write("Generating equidistant square with the following distance from the following margin");
     write(margin);
 
