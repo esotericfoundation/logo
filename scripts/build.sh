@@ -9,10 +9,6 @@ mkdir -p 'output'
 asy logo -outformat png -user 'type = "circle"; borderDistance = 3' -outname './output/logo-circle'
 asy logo -outformat svg -user 'type = "circle"; borderDistance = 3' -outname './output/logo-circle'
 
-# Square around logo
-asy logo -outformat png -user 'type = "square-centered"' -outname './output/logo-square-centered'
-asy logo -outformat svg -user 'type = "square-centered"' -outname './output/logo-square-centered'
-
 # Equidistant square
 # Used for: GitHub
 
