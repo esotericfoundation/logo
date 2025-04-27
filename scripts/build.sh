@@ -6,8 +6,8 @@ mkdir -p 'output'
 
 # Circle around logo
 # Used for: Discord
-asy logo -outformat png -user 'type = "circle"; radius = 2centerToA' -outname './output/logo-circle'
-asy logo -outformat svg -user 'type = "circle"; radius = 2centerToA' -outname './output/logo-circle'
+asy logo -outformat png -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
+asy logo -outformat svg -user 'type = "circle"; borderRadiusFraction = 1/4' -outname './output/logo-circle'
 
 # Equidistant square
 # Used for: GitHub

@@ -92,6 +92,12 @@ usersetting();
 // VARIANTS
 
 if (type == "circle") {
+    real margin = (2 * equilateralTriangleRight.x * borderRadiusFraction) / (1 - 2 * borderRadiusFraction);
+    write("Generating equidistant square with the following distance from the following margin");
+    write(margin);
+
+    real radius = equilateralTriangleRight.x + margin;
+
     path circle = circle(center, radius);
 
     filldraw(circle, black, nullpen);
