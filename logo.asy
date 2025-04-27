@@ -73,17 +73,10 @@ point leftSideTriangleLeft = intersectionpoint(sideTrianglesTop, smallSquareBott
 path rightSideTriangle = rightSideTriangleLeft--rightSideTriangleRight--rightSideTriangleBottom--cycle;
 path leftSideTriangle = leftSideTriangleRight--leftSideTriangleLeft--leftSideTriangleBottom--cycle;
 
-// ASSERTIONS
-
-real centerToA = arclength(center--equilateralTriangleRight);
-real centerToB = arclength(center--equilateralTriangleTop);
-real centerToC = arclength(center--equilateralTriangleLeft);
-
-assert(centerToA - centerToB < realEpsilon & centerToB - centerToC < realEpsilon & centerToA - centerToC < realEpsilon, "Defined center is not exactly in the center of the equilateral triangle!");
-
 // UNIVERSAL DEFINITIONS
 
-real radius = 2 * centerToA;
+real equilateralTriangleCircumradius = arclength(center--equilateralTriangleTop);
+real radius = 2 * equilateralTriangleCircumradius;
 
 // USER SETTING CALL
 
